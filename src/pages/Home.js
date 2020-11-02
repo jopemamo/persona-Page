@@ -15,31 +15,27 @@ const Home = () => {
     <>
       <BrowserRouter>
         <Switch>
-          <Route path='/about' render={() => (
+          <Route path='/about' render={() =>
             <About />
-          )}>
+          }>
           </Route>
-          <Route path='/projects' render={() => (
+          <Route path='/projects' render={() =>
             <Projects />
-          )}>
+          }>
           </Route>
-          <Route path='/' render={() => {
-            if (submitted === true) {
-              return (
-                <Redirect to="/about" />
-              )
-            } else {
-              return (
-                <>
+          <Route path='/' render={() =>
+            submitted ?
+              <Redirect to="/about" />
+              :
+              <>
                 <h1>Jorge's Adventure</h1>
                 <Link className="enter" to='/about' style={{ textDecoration: 'none' }}>
                   <p >Press Enter to Start</p>
                   <KeyHandler handleKeyPressed={handleKeyPressed} />
                 </Link>
-                </>
-              )
-            }
-          }}>
+              </>
+          }
+          >
           </Route>
         </Switch>
       </BrowserRouter>
