@@ -12,7 +12,10 @@ body {
   color: white;
 }
 
-
+img {
+  max-width: 500px;
+  max-height: 700px;
+}
 
 .enter {
   width: 1000px;
