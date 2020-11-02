@@ -17,8 +17,8 @@ const About = () => {
           :
           <>
             <p>This is about</p>
-            <Link className="enter" to='/projects' style={{ textDecoration: 'none' }}>
-              <p >Press Enter to Start</p>
+            <Link  to='/projects' style={{ textDecoration: 'none' }}>
+              <p className="options" >Press Enter to Continue</p>
               <KeyHandler handleKeyPressed={handleKeyPressed} />
             </Link>
           </>}

@@ -30,7 +30,7 @@ const Home = () => {
               <>
                 <h1>Jorge's Adventure</h1>
                 <Link className="enter" to='/about' style={{ textDecoration: 'none' }}>
-                  <p >Press Enter to Start</p>
+                  <p className="options">Press Enter to Start</p>
                   <KeyHandler handleKeyPressed={handleKeyPressed} />
                 </Link>
               </>
