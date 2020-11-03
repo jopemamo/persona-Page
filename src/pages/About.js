@@ -11,7 +11,7 @@ const About = () => {
   }
   useEffect(()=> {
     typeWriter();
-  },[])
+  })
 
   let i = 0;
   const txt = 'After walking several paths and living different experiences, our Hero was ready for the definitive adventure.';
@@ -32,7 +32,7 @@ const About = () => {
           :
           <>
             <h1>Jorge's Adventure</h1>
-            <img src="https://res.cloudinary.com/diggrhtle/image/upload/v1604332718/persona%20page/Jorge_Moreno_2_z9iur1.jpg"></img>
+            <img src="https://res.cloudinary.com/diggrhtle/image/upload/v1604332718/persona%20page/Jorge_Moreno_2_z9iur1.jpg" alt="The Hero"></img>
             <p id="text"></p>
             <Link to='/projects' style={{ textDecoration: 'none' }}>
               <p className="options" >Press Enter to Continue</p>
