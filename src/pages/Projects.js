@@ -11,10 +11,14 @@ const Projects = () => {
     JSToDo: false,
   })
 
+  const handleClick = () => {
+    setProjects({ ...projects, bidraSammen: true})
+  }
+
   return (
     <>
       <h1>Quests Completed</h1>
-      <p>Bidra Sammen</p>
+      <p onClick={handleClick}>Bidra Sammen</p>
       {projects.bidraSammen ? <BidraSammen /> : null}
       <p>Which Movie is Worse?</p>
       <p>Loan Calculator</p>
