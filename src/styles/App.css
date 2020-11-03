@@ -40,7 +40,7 @@ h1 {
 .options {
   animation: blinker 2s linear infinite;
 }
-#text {
+.text {
   width: 50%;
 }
 main {
