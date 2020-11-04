@@ -5,17 +5,9 @@ import WMW from '../components/WMW';
 import JSToDo from '../components/JSToDo';
 import LoanCalculator from '../components/LoanCalculator';
 import ReactToDo from '../components/ReactToDo';
-
+/* import Tabs from '../components/Tabs'; */
 
 const Projects = () => {
-  const [projects, setProjects] = useState({
-    bidraSammen: false,
-    WMW: false,
-    loanCalculator: false,
-    reactToDo: false,
-    jSToDo: false,
-  });
-
   const defaultState = {
     bidraSammen: false,
     WMW: false,
@@ -23,6 +15,9 @@ const Projects = () => {
     reactToDo: false,
     jSToDo: false,
   };
+
+  const [projects, setProjects] = useState(defaultState);
+
 
   const handleClick = (e) => {
     setProjects({ ...defaultState, [e.target.id]: true })
@@ -45,6 +40,7 @@ const Projects = () => {
         <p className="options">Back to About</p>
       </Link>
     </>
+/*     <Tabs /> */
   )
 }
 

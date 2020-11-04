@@ -19,6 +19,7 @@ const About = () => {
           <>
             <h1>Jorge's Adventure</h1>
             <img src="https://res.cloudinary.com/diggrhtle/image/upload/v1604332718/persona%20page/Jorge_Moreno_2_z9iur1.jpg" alt="The Hero"></img>
+            <div className="text">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
@@ -31,6 +32,7 @@ const About = () => {
                 wrapperClassName: 'text',
               }}
             />
+            </div>
             <Link to='/projects' style={{ textDecoration: 'none' }}>
               <p className="options" >Press Enter to Continue</p>
               <KeyHandler handleKeyPressed={handleKeyPressed} />
