@@ -52,13 +52,6 @@ main {
   text-align: center;
   justify-content: center;
 }
-.tabs {
-  font-family: 'Press Start 2P', cursive;
-}
-
-.MuiTabs-root{
-  font-family: 'Press Start 2P', cursive;
-}
 
 @keyframes blinker {
   50% {

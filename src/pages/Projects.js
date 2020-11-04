@@ -5,7 +5,7 @@ import WMW from '../components/WMW';
 import JSToDo from '../components/JSToDo';
 import LoanCalculator from '../components/LoanCalculator';
 import ReactToDo from '../components/ReactToDo';
-/* import Tabs from '../components/Tabs'; */
+/* import Tabulation from '../components/Tabulation'; */
 
 const Projects = () => {
   const defaultState = {
@@ -40,7 +40,7 @@ const Projects = () => {
         <p className="options">Back to About</p>
       </Link>
     </>
-/*     <Tabs /> */
+/*     <Tabulation /> */
   )
 }
 

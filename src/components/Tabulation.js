@@ -73,7 +73,7 @@ export default function VerticalTabs() {
         aria-label="Vertical tabs example"
         className={classes.tabs}
         indicatorColor="black"
-        className="tabs"
+        className="tabulation"
       >
         <Tab label="Bidra Sammen" {...a11yProps(0)} />
         <Tab label="WMW" {...a11yProps(1)} />
