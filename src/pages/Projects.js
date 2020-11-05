@@ -26,6 +26,11 @@ const Projects = () => {
   return (
     <>
       <h1>Quests Completed</h1>
+      <iframe title="projectsAudio" src="https://res.cloudinary.com/diggrhtle/video/upload/v1604578026/persona%20page/select_screen_z8yyms.mp3" type="audio/mp3" allow="autoplay" className="audioFrame"></iframe>
+      <audio autoPlay>
+        <source src="https://res.cloudinary.com/diggrhtle/video/upload/v1604578026/persona%20page/select_screen_z8yyms.mp3" type="audio/mpeg" />
+          Your browser does not support the audio tag.
+      </audio>
       <p id="bidraSammen" onClick={handleClick}>Bidra Sammen</p>
       {projects.bidraSammen ? <BidraSammen /> : null}
       <p id="WMW" onClick={handleClick}>Which Movie is Worse?</p>
@@ -40,7 +45,7 @@ const Projects = () => {
         <p className="options">Back to About</p>
       </Link>
     </>
-/*     <Tabulation /> */
+    /*     <Tabulation /> */
   )
 }
 

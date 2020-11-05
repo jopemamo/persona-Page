@@ -52,6 +52,9 @@ main {
   text-align: center;
   justify-content: center;
 }
+.audioFrame {
+  display: none;
+}
 
 @keyframes blinker {
   50% {
