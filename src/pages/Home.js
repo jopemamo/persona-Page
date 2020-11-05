@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route, Link, Redirect } from 'react-router-dom';
 import About from './About';
 import Projects from './Projects';
 import KeyHandler from '../components/KeyHandler';
+import '../styles/Home.css';
 
 const Home = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -11,7 +12,7 @@ const Home = () => {
   const handleKeyPressed = () => {
     setSubmitted(true)
   }
-  const handleClick = () => {
+  const handleSound = () => {
     setSound(!sound);
   }
   return (
@@ -19,11 +20,11 @@ const Home = () => {
       <BrowserRouter>
         <Switch>
           <Route path='/about' render={() =>
-            <About />
+            <About handleSound={handleSound} sound={sound}/>
           }>
           </Route>
           <Route path='/projects' render={() =>
-            <Projects />
+            <Projects handleSound={handleSound} sound={sound}/>
           }>
           </Route>
           <Route path='/' render={() =>
@@ -32,22 +33,26 @@ const Home = () => {
               :
               <>
                 {sound ?
-                  <>
-                    <img onClick={handleClick} className="sound" src="https://res.cloudinary.com/diggrhtle/image/upload/v1604580007/persona%20page/volume_1_u4ri1u.png" alt="soundOn"></img>
-                    <iframe title="homeAudio" src="https://res.cloudinary.com/diggrhtle/video/upload/v1604576120/persona%20page/title_ig0xau.mp3" type="audio/mp3" allow="autoplay" className="audioFrame"></iframe>
+                  <section className="section__sound">
+                    <img onClick={handleSound} className="sound" src="https://res.cloudinary.com/diggrhtle/image/upload/v1604580007/persona%20page/volume_1_u4ri1u.png" alt="soundOn"/>
+                    <iframe title="homeAudio" src="https://res.cloudinary.com/diggrhtle/video/upload/v1604576120/persona%20page/title_ig0xau.mp3" type="audio/mp3" allow="autoplay" className="audioFrame" />
                     <audio autoPlay>
                       <source src="https://res.cloudinary.com/diggrhtle/video/upload/v1604576120/persona%20page/title_ig0xau.mp3" type="audio/mpeg" />
                     Your browser does not support the audio tag.
                 </audio>
-                  </>
+                  </ section>
                   :
-                  <img onClick={handleClick} className="sound" src="https://res.cloudinary.com/diggrhtle/image/upload/v1604584806/persona%20page/mute-button_vtvguw.png" alt="soundOff"></img>
+                  <section className="section__sound">
+                  <img onClick={handleSound} className="sound" src="https://res.cloudinary.com/diggrhtle/image/upload/v1604584806/persona%20page/mute-button_vtvguw.png" alt="soundOff" />
+                  </section >
                 }
-                <h1>Jorge's Adventure</h1>
-                <Link className="enter" to='/about' style={{ textDecoration: 'none' }}>
+                <main>
+                <h1 id="homeTitle">Jorge's Adventure</h1>
+{                <Link className="enter" to='/about' style={{ textDecoration: 'none' }}>
                   <p className="options">Press Enter to Start</p>
                   <KeyHandler handleKeyPressed={handleKeyPressed} />
-                </Link>
+                </Link>}
+              </ main>
               </>
           }
           >

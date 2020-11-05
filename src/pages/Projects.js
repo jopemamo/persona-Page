@@ -7,7 +7,7 @@ import LoanCalculator from '../components/LoanCalculator';
 import ReactToDo from '../components/ReactToDo';
 /* import Tabulation from '../components/Tabulation'; */
 
-const Projects = () => {
+const Projects = ({ handleSound, sound }) => {
   const defaultState = {
     bidraSammen: false,
     WMW: false,
@@ -25,12 +25,20 @@ const Projects = () => {
 
   return (
     <>
-      <h1>Quests Completed</h1>
-      <iframe title="projectsAudio" src="https://res.cloudinary.com/diggrhtle/video/upload/v1604578026/persona%20page/select_screen_z8yyms.mp3" type="audio/mp3" allow="autoplay" className="audioFrame"></iframe>
-      <audio autoPlay>
-        <source src="https://res.cloudinary.com/diggrhtle/video/upload/v1604578026/persona%20page/select_screen_z8yyms.mp3" type="audio/mpeg" />
+      {sound ?
+        <>
+          <img onClick={handleSound} className="sound" src="https://res.cloudinary.com/diggrhtle/image/upload/v1604580007/persona%20page/volume_1_u4ri1u.png" alt="soundOn" />
+          <iframe title="projectsAudio" src="https://res.cloudinary.com/diggrhtle/video/upload/v1604578026/persona%20page/select_screen_z8yyms.mp3" type="audio/mp3" allow="autoplay" className="audioFrame" />
+          <audio autoPlay>
+            <source src="https://res.cloudinary.com/diggrhtle/video/upload/v1604578026/persona%20page/select_screen_z8yyms.mp3" type="audio/mpeg" />
           Your browser does not support the audio tag.
-      </audio>
+          </audio>
+        </>
+        :
+        <img onClick={handleSound} className="sound" src="https://res.cloudinary.com/diggrhtle/image/upload/v1604584806/persona%20page/mute-button_vtvguw.png" alt="soundOff" />
+      }
+      <h1>Quests Completed</h1>
+
       <p id="bidraSammen" onClick={handleClick}>Bidra Sammen</p>
       {projects.bidraSammen ? <BidraSammen /> : null}
       <p id="WMW" onClick={handleClick}>Which Movie is Worse?</p>

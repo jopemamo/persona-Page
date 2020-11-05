@@ -3,7 +3,7 @@ import { Link, Redirect } from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
 import KeyHandler from '../components/KeyHandler'
 
-const About = () => {
+const About = ({ handleSound, sound }) => {
   const [submitted, setSubmitted] = useState(false)
 
   const handleKeyPressed = () => {
@@ -11,14 +11,26 @@ const About = () => {
   }
 
   return (
-    <main>
+    <main className="aboutMain">
       {
         submitted ?
           <Redirect to="/projects" />
           :
           <>
+            {sound ?
+              <>
+                <img onClick={handleSound} className="sound" src="https://res.cloudinary.com/diggrhtle/image/upload/v1604580007/persona%20page/volume_1_u4ri1u.png" alt="soundOn" />
+                <iframe title="aboutAudio" src="https://res.cloudinary.com/diggrhtle/video/upload/v1604578021/persona%20page/overworld_rtg6c4.mp3" type="audio/mp3" allow="autoplay" className="audioFrame" />
+                <audio autoPlay>
+                  <source src="https://res.cloudinary.com/diggrhtle/video/upload/v1604578021/persona%20page/overworld_rtg6c4.mp3" type="audio/mpeg" />
+                      Your browser does not support the audio tag.
+                </audio>
+              </>
+              :
+              <img onClick={handleSound} className="sound" src="https://res.cloudinary.com/diggrhtle/image/upload/v1604584806/persona%20page/mute-button_vtvguw.png" alt="soundOff" />
+            }
             <h1>Jorge's Adventure</h1>
-            <img src="https://res.cloudinary.com/diggrhtle/image/upload/v1604332718/persona%20page/Jorge_Moreno_2_z9iur1.jpg" alt="The Hero"></img>
+            <img src="https://res.cloudinary.com/diggrhtle/image/upload/v1604332718/persona%20page/Jorge_Moreno_2_z9iur1.jpg" alt="The Hero" />
             <div className="text">
               <Typewriter
                 onInit={(typewriter) => {
@@ -33,11 +45,7 @@ const About = () => {
                 }}
               />
             </div>
-            <iframe title="aboutAudio" src="https://res.cloudinary.com/diggrhtle/video/upload/v1604578021/persona%20page/overworld_rtg6c4.mp3" type="audio/mp3" allow="autoplay" className="audioFrame"></iframe>
-            <audio autoPlay>
-              <source src="https://res.cloudinary.com/diggrhtle/video/upload/v1604578021/persona%20page/overworld_rtg6c4.mp3" type="audio/mpeg" />
-                      Your browser does not support the audio tag.
-                </audio>
+
             <Link to='/projects' style={{ textDecoration: 'none' }}>
               <p className="options" >Press Enter to Continue</p>
               <KeyHandler handleKeyPressed={handleKeyPressed} />
