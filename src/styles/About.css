@@ -16,7 +16,7 @@ main {
 
 .text {
   margin: 30px;
-  width: 50%;
+ text-align: start;
 }
 
 @-webkit-keyframes bounceInLeft {
@@ -54,7 +54,7 @@ main {
 @-webkit-keyframes bounceInRight {
   0% {
      opacity: 0;
-     -webkit-transform: translateX(1000px);
+     -webkit-transform: translateX(650px);
   }
   100% {
      -webkit-transform: translateX(0);
@@ -64,7 +64,7 @@ main {
 @keyframes bounceInRight {
   0% {
      opacity: 0;
-     transform: translateX(1000px);
+     transform: translateX(650px);
   }
   100% {
      transform: translateX(0);
@@ -134,6 +134,7 @@ main {
 }
 .mongo {
   background: white;
+  border-radius: 50%;
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
   animation-delay:7s;

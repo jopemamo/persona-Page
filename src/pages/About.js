@@ -45,7 +45,7 @@ const About = ({ handleSound, sound }) => {
                   <img className="react"src="https://res.cloudinary.com/diggrhtle/image/upload/v1604658257/persona%20page/react_gcrmku.svg" alt="React" />
                   <img className="node"src="https://res.cloudinary.com/diggrhtle/image/upload/v1604658255/persona%20page/nodejs_jj4abw.svg" alt="Node.js" />
                   <img className="git"src="https://res.cloudinary.com/diggrhtle/image/upload/v1604658255/persona%20page/github_irvkxt.svg" alt="GitHub" />
-                  <img className="mongo" src="https://res.cloudinary.com/diggrhtle/image/upload/v1604658762/persona%20page/mongodb-5-1175140_sui7yr.png" alt="MongoDB" />
+                  <img className="mongo" src="https://res.cloudinary.com/diggrhtle/image/upload/v1604663704/persona%20page/mongocropped_i0yhuc.png" alt="MongoDB" />
                   <img className="sql"src="https://res.cloudinary.com/diggrhtle/image/upload/v1604658255/persona%20page/mysql_zuhmma.svg" alt="SQL" />
                   <img className="docker"src="https://res.cloudinary.com/diggrhtle/image/upload/v1604658255/persona%20page/docker_lwexoj.svg" alt="Docker" />
                 </div>
@@ -55,13 +55,15 @@ const About = ({ handleSound, sound }) => {
                   onInit={(typewriter) => {
                     typewriter
                       .typeString('After walking several paths and living different experiences, our Hero was ready for the definitive adventure.')
-                      .start();
+                      .start()
                   }}
                   options={{
                     cursor: '',
                     autoStart: true,
                     wrapperClassName: 'text',
+                    delay: 50,
                   }}
+
                 />
               </div>
 
