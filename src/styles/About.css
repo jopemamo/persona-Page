@@ -14,12 +14,149 @@ main {
   flex-direction: row;
 }
 
-#theHero {
-  max-width: 400px;
-  max-height: 500px;
-}
-
 .text {
   margin: 30px;
   width: 50%;
+}
+
+@-webkit-keyframes bounceInLeft {
+  0% {
+     opacity: 0;
+     -webkit-transform: translateX(-100px);
+  }
+  100% {
+     -webkit-transform: translateX(0);
+  }
+}
+
+@keyframes bounceInLeft {
+  0% {
+     opacity: 0;
+     transform: translateX(-1000px);
+  }
+  100% {
+     transform: translateX(0);
+  }
+}
+
+#theHero  {
+  max-width: 400px;
+  max-height: 500px;
+  margin-bottom:60px;
+  -webkit-animation-duration: 20s; 
+  animation-duration: 20s; 
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; 
+  -webkit-animation-name: bounceInLeft;
+  animation-name: bounceInLeft;
+}
+
+@-webkit-keyframes bounceInRight {
+  0% {
+     opacity: 0;
+     -webkit-transform: translateX(1000px);
+  }
+  100% {
+     -webkit-transform: translateX(0);
+  }
+}
+
+@keyframes bounceInRight {
+  0% {
+     opacity: 0;
+     transform: translateX(1000px);
+  }
+  100% {
+     transform: translateX(0);
+  }
+}
+.www {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: bounceInRight;
+  animation-name: bounceInRight;
+}
+.js {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-delay:1s;
+  -webkit-animation-name: bounceInRight;
+  animation-name: bounceInRight;
+}
+.html {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  animation-delay:2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: bounceInRight;
+  animation-name: bounceInRight;
+}
+.css {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  animation-delay:3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: bounceInRight;
+  animation-name: bounceInRight;
+}
+.react {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  animation-delay:4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: bounceInRight;
+  animation-name: bounceInRight;
+}
+.node {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  animation-delay:5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: bounceInRight;
+  animation-name: bounceInRight;
+}
+.git {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  animation-delay:6s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: bounceInRight;
+  animation-name: bounceInRight;
+}
+.mongo {
+  background: white;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  animation-delay:7s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: bounceInRight;
+  animation-name: bounceInRight;
+}
+.sql {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  animation-delay:8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: bounceInRight;
+  animation-name: bounceInRight;
+}
+.docker {
+  -webkit-animation-duration: 2;
+  animation-duration: 2s;
+  animation-delay:9s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: bounceInRight;
+  animation-name: bounceInRight;
 }

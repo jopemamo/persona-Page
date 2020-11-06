@@ -38,16 +38,16 @@ const About = ({ handleSound, sound }) => {
               <section className="aboutImages" >
                 <img id="theHero" src="https://res.cloudinary.com/diggrhtle/image/upload/v1604332718/persona%20page/Jorge_Moreno_2_z9iur1.jpg" alt="The Hero" />
                 <div className="technologies" >
-                  <img src="https://res.cloudinary.com/diggrhtle/image/upload/v1604658257/persona%20page/world-wide-web_phcum2.png" alt="WWW" />
-                  <img src="https://res.cloudinary.com/diggrhtle/image/upload/v1604658255/persona%20page/javascript_envkmn.svg" alt="JS" />
-                  <img src="https://res.cloudinary.com/diggrhtle/image/upload/v1604658257/persona%20page/html-5_jr6v0h.svg" alt="HTML" />
-                  <img src="https://res.cloudinary.com/diggrhtle/image/upload/v1604658257/persona%20page/css_u5ythd.svg" alt="CSS" />
-                  <img src="https://res.cloudinary.com/diggrhtle/image/upload/v1604658257/persona%20page/react_gcrmku.svg" alt="React" />
-                  <img src="https://res.cloudinary.com/diggrhtle/image/upload/v1604658255/persona%20page/nodejs_jj4abw.svg" alt="Node.js" />
-                  <img src="https://res.cloudinary.com/diggrhtle/image/upload/v1604658255/persona%20page/github_irvkxt.svg" alt="GitHub" />
-                  <img src="https://res.cloudinary.com/diggrhtle/image/upload/v1604658762/persona%20page/mongodb-5-1175140_sui7yr.png" alt="MongoDB" />
-                  <img src="https://res.cloudinary.com/diggrhtle/image/upload/v1604658255/persona%20page/mysql_zuhmma.svg" alt="SQL" />
-                  <img src="https://res.cloudinary.com/diggrhtle/image/upload/v1604658255/persona%20page/docker_lwexoj.svg" alt="Docker" />
+                  <img className="www"src="https://res.cloudinary.com/diggrhtle/image/upload/v1604658257/persona%20page/world-wide-web_phcum2.png" alt="WWW" />
+                  <img className="js"src="https://res.cloudinary.com/diggrhtle/image/upload/v1604658255/persona%20page/javascript_envkmn.svg" alt="JS" />
+                  <img className="html"src="https://res.cloudinary.com/diggrhtle/image/upload/v1604658257/persona%20page/html-5_jr6v0h.svg" alt="HTML" />
+                  <img className="css"src="https://res.cloudinary.com/diggrhtle/image/upload/v1604658257/persona%20page/css_u5ythd.svg" alt="CSS" />
+                  <img className="react"src="https://res.cloudinary.com/diggrhtle/image/upload/v1604658257/persona%20page/react_gcrmku.svg" alt="React" />
+                  <img className="node"src="https://res.cloudinary.com/diggrhtle/image/upload/v1604658255/persona%20page/nodejs_jj4abw.svg" alt="Node.js" />
+                  <img className="git"src="https://res.cloudinary.com/diggrhtle/image/upload/v1604658255/persona%20page/github_irvkxt.svg" alt="GitHub" />
+                  <img className="mongo" src="https://res.cloudinary.com/diggrhtle/image/upload/v1604658762/persona%20page/mongodb-5-1175140_sui7yr.png" alt="MongoDB" />
+                  <img className="sql"src="https://res.cloudinary.com/diggrhtle/image/upload/v1604658255/persona%20page/mysql_zuhmma.svg" alt="SQL" />
+                  <img className="docker"src="https://res.cloudinary.com/diggrhtle/image/upload/v1604658255/persona%20page/docker_lwexoj.svg" alt="Docker" />
                 </div>
               </section>
               <div className="text">
