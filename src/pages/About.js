@@ -20,6 +20,7 @@ const About = ({ handleSound, sound }) => {
           <>
             {sound ?
               <section className="section__sound">
+                <h1 className="title" >Jorge's Adventure</h1>
                 <img onClick={handleSound} className="sound" src="https://res.cloudinary.com/diggrhtle/image/upload/v1604580007/persona%20page/volume_1_u4ri1u.png" alt="soundOn" />
                 <iframe title="aboutAudio" src="https://res.cloudinary.com/diggrhtle/video/upload/v1604578021/persona%20page/overworld_rtg6c4.mp3" type="audio/mp3" allow="autoplay" className="audioFrame" />
                 <audio autoPlay>
@@ -29,12 +30,26 @@ const About = ({ handleSound, sound }) => {
               </section>
               :
               <section className="section__sound">
+                <h1 className="title" >Jorge's Adventure</h1>
                 <img onClick={handleSound} className="sound" src="https://res.cloudinary.com/diggrhtle/image/upload/v1604584806/persona%20page/mute-button_vtvguw.png" alt="soundOff" />
               </ section>
             }
             <main>
-              <h1>Jorge's Adventure</h1>
-              <img src="https://res.cloudinary.com/diggrhtle/image/upload/v1604332718/persona%20page/Jorge_Moreno_2_z9iur1.jpg" alt="The Hero" />
+              <section className="aboutImages" >
+                <img id="theHero" src="https://res.cloudinary.com/diggrhtle/image/upload/v1604332718/persona%20page/Jorge_Moreno_2_z9iur1.jpg" alt="The Hero" />
+                <div className="technologies" >
+                  <img src="https://res.cloudinary.com/diggrhtle/image/upload/v1604658257/persona%20page/world-wide-web_phcum2.png" alt="WWW" />
+                  <img src="https://res.cloudinary.com/diggrhtle/image/upload/v1604658255/persona%20page/javascript_envkmn.svg" alt="JS" />
+                  <img src="https://res.cloudinary.com/diggrhtle/image/upload/v1604658257/persona%20page/html-5_jr6v0h.svg" alt="HTML" />
+                  <img src="https://res.cloudinary.com/diggrhtle/image/upload/v1604658257/persona%20page/css_u5ythd.svg" alt="CSS" />
+                  <img src="https://res.cloudinary.com/diggrhtle/image/upload/v1604658257/persona%20page/react_gcrmku.svg" alt="React" />
+                  <img src="https://res.cloudinary.com/diggrhtle/image/upload/v1604658255/persona%20page/nodejs_jj4abw.svg" alt="Node.js" />
+                  <img src="https://res.cloudinary.com/diggrhtle/image/upload/v1604658255/persona%20page/github_irvkxt.svg" alt="GitHub" />
+                  <img src="https://res.cloudinary.com/diggrhtle/image/upload/v1604658762/persona%20page/mongodb-5-1175140_sui7yr.png" alt="MongoDB" />
+                  <img src="https://res.cloudinary.com/diggrhtle/image/upload/v1604658255/persona%20page/mysql_zuhmma.svg" alt="SQL" />
+                  <img src="https://res.cloudinary.com/diggrhtle/image/upload/v1604658255/persona%20page/docker_lwexoj.svg" alt="Docker" />
+                </div>
+              </section>
               <div className="text">
                 <Typewriter
                   onInit={(typewriter) => {

@@ -2,14 +2,9 @@
 main {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   align-items: center;
 }
 
-h1{
-  font-size: 120px;
-  margin-bottom: 20%;
-}
 .enter {
   max-height: 400px;
 }
@@ -19,6 +14,7 @@ h1{
 }
 
 #homeTitle {
+  font-size: 120px;
   padding-top:95px;
   margin-bottom:60px;
   -webkit-animation-duration: 7s;

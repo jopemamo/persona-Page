@@ -1,6 +1,25 @@
 main {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   align-items: center;
+}
+
+.technologies img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.aboutImages {
+  display: flex;
+  flex-direction: row;
+}
+
+#theHero {
+  max-width: 400px;
+  max-height: 500px;
+}
+
+.text {
+  margin: 30px;
+  width: 50%;
 }

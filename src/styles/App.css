@@ -25,9 +25,9 @@ body {
   margin: 1%;
 }
 
-img {
-  max-width: 500px;
-  max-height: 700px;
+.title {
+  font-size: 30px;
+  margin-right: 41%;
 }
 
 .enter {
@@ -44,10 +44,6 @@ h1 {
   animation: blinker 2s linear infinite;
 }
 
-.text {
-  width: 50%;
-}
-
 .audioFrame {
   display: none;
 }
@@ -61,8 +57,4 @@ h1 {
   background-color: white;
   width: 60px;
   height: 60px;
-}
-
-.project {
-  font-family: 'ganon';
 }
