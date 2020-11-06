@@ -18,6 +18,13 @@ body {
   color: white;
 }
 
+.section__sound {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 1%;
+}
+
 img {
   max-width: 500px;
   max-height: 700px;
@@ -41,13 +48,6 @@ h1 {
   width: 50%;
 }
 
-.aboutMain {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-}
 .audioFrame {
   display: none;
 }

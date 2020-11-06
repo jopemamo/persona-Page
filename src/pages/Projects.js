@@ -5,6 +5,7 @@ import WMW from '../components/WMW';
 import JSToDo from '../components/JSToDo';
 import LoanCalculator from '../components/LoanCalculator';
 import ReactToDo from '../components/ReactToDo';
+import '../styles/Projects.css'
 /* import Tabulation from '../components/Tabulation'; */
 
 const Projects = ({ handleSound, sound }) => {
