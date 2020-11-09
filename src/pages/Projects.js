@@ -6,18 +6,22 @@ import JSToDo from '../components/JSToDo';
 import LoanCalculator from '../components/LoanCalculator';
 import ReactToDo from '../components/ReactToDo';
 import Persona from '../components/Persona';
+import Sound from '../components/Sound';
 import audio from '../audios/select_screen.mp3';
 import '../styles/Projects.css'
 /* import Tabulation from '../components/Tabulation'; */
 
 const Projects = ({ handleSound, sound }) => {
   const defaultState = {
+    persona: false,
     bidraSammen: false,
     WMW: false,
     loanCalculator: false,
     reactToDo: false,
     jSToDo: false,
   };
+  
+  const audioLink = "https://res.cloudinary.com/diggrhtle/video/upload/v1604578026/persona%20page/select_screen_z8yyms.mp3"
 
   const [projects, setProjects] = useState(defaultState);
 
@@ -28,22 +32,11 @@ const Projects = ({ handleSound, sound }) => {
 
   return (
     <>
-      {sound ?
-        <>
-          <img onClick={handleSound} className="sound" src="https://res.cloudinary.com/diggrhtle/image/upload/v1604580007/persona%20page/volume_1_u4ri1u.png" alt="soundOn" />
-          <audio autoPlay>
-            <source src="https://res.cloudinary.com/diggrhtle/video/upload/v1604578026/persona%20page/select_screen_z8yyms.mp3" type="audio/mpeg" />
-            <source src={audio}  type="audio/mpeg" />
-          Your browser does not support the audio tag.
-          </audio>
-        </>
-        :
-        <img onClick={handleSound} className="sound" src="https://res.cloudinary.com/diggrhtle/image/upload/v1604584806/persona%20page/mute-button_vtvguw.png" alt="soundOff" />
-      }
+      <Sound sound={sound} audio={audio} audioLink={audioLink} handleSound={handleSound} />
       <h1>Stages Completed</h1>
 
       <p id="persona" onClick={handleClick}>Stage 7: Persona Page</p>
-      {projects.bidraSammen ? <Persona /> : null}
+      {projects.persona ? <Persona /> : null}
       <p id="loanCalculator" onClick={handleClick}>Stage 6: Loan Calculator</p>
       {projects.loanCalculator ? <LoanCalculator /> : null}
       <p id="bidraSammen" onClick={handleClick}>Stage 5: Bidra Sammen</p>

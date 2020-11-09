@@ -3,13 +3,15 @@ import { BrowserRouter, Switch, Route, Link, Redirect } from 'react-router-dom';
 import About from './About';
 import Projects from './Projects';
 import KeyHandler from '../components/KeyHandler';
+import Sound from '../components/Sound';
 import audio from '../audios/title.mp3'
 import '../styles/Home.css';
 
 const Home = () => {
   const [submitted, setSubmitted] = useState(false);
-  const [sound, setSound] = useState(true);
+  const [sound, setSound] = useState(false);
 
+  const audioLink = "https://res.cloudinary.com/diggrhtle/video/upload/v1604576120/persona%20page/title_ig0xau.mp3";
 
   const handleKeyPressed = () => {
     setSubmitted(true)
@@ -34,20 +36,7 @@ const Home = () => {
               <Redirect to="/about" />
               :
               <>
-                {sound ?
-                  <section className="section__sound">
-                    <img onClick={handleSound} className="sound" src="https://res.cloudinary.com/diggrhtle/image/upload/v1604580007/persona%20page/volume_1_u4ri1u.png" alt="soundOn" />
-                    <audio autoPlay volume={1}>
-                      <source src="https://res.cloudinary.com/diggrhtle/video/upload/v1604576120/persona%20page/title_ig0xau.mp3"  type="audio/mpeg" />
-                      <source src={audio}  type="audio/mpeg" />
-                    Your browser does not support the audio tag.
-                    </audio>
-                  </ section>
-                  :
-                  <section className="section__sound">
-                    <img onClick={handleSound} className="sound" src="https://res.cloudinary.com/diggrhtle/image/upload/v1604584806/persona%20page/mute-button_vtvguw.png" alt="soundOff" />
-                  </section >
-                }
+                <Sound sound={sound} audio={audio} audioLink={audioLink} handleSound={handleSound} />
                   <main>
                     <h1 id="homeTitle">Jorge's Adventure</h1>
                     {<Link className="enter" to='/about' style={{ textDecoration: 'none' }}>

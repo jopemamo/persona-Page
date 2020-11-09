@@ -44,9 +44,6 @@ h1 {
   animation: blinker 2s linear infinite;
 }
 
-.audioFrame {
-  display: none;
-}
 
 @keyframes blinker {
   50% {
@@ -57,4 +54,8 @@ h1 {
   background-color: white;
   width: 60px;
   height: 60px;
+}
+
+.section__sound__p {
+  padding: 0.4%;
 }
