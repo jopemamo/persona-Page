@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route, Link, Redirect } from 'react-router-dom';
 import About from './About';
 import Projects from './Projects';
 import KeyHandler from '../components/KeyHandler';
+import audio from '../audios/title.mp3'
 import '../styles/Home.css';
 
 const Home = () => {
@@ -36,8 +37,9 @@ const Home = () => {
                 {sound ?
                   <section className="section__sound">
                     <img onClick={handleSound} className="sound" src="https://res.cloudinary.com/diggrhtle/image/upload/v1604580007/persona%20page/volume_1_u4ri1u.png" alt="soundOn" />
-                    <audio autoPlay preload="metadata">
-                      <source src="audios/title.mp3"  type="audio/mp3" />
+                    <audio autoPlay volume={1}>
+                      <source src={audio}  type="audio/mpeg" />
+                      <source src="https://res.cloudinary.com/diggrhtle/video/upload/v1604576120/persona%20page/title_ig0xau.mp3"  type="audio/mpeg" />
                     Your browser does not support the audio tag.
                     </audio>
                   </ section>
