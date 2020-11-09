@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
 import KeyHandler from '../components/KeyHandler';
+import audio from '../audios/overworld.mp3';
 import '../styles/About.css';
 
 const About = ({ handleSound, sound }) => {
@@ -24,6 +25,7 @@ const About = ({ handleSound, sound }) => {
                 <img onClick={handleSound} className="sound" src="https://res.cloudinary.com/diggrhtle/image/upload/v1604580007/persona%20page/volume_1_u4ri1u.png" alt="soundOn" />
                 <audio autoPlay loop>
                   <source src="https://res.cloudinary.com/diggrhtle/video/upload/v1604578021/persona%20page/overworld_rtg6c4.mp3" type="audio/mpeg" />
+                  <source src={audio}  type="audio/mpeg" />
                       Your browser does not support the audio tag.
                 </audio>
               </section>

@@ -38,8 +38,8 @@ const Home = () => {
                   <section className="section__sound">
                     <img onClick={handleSound} className="sound" src="https://res.cloudinary.com/diggrhtle/image/upload/v1604580007/persona%20page/volume_1_u4ri1u.png" alt="soundOn" />
                     <audio autoPlay volume={1}>
-                      <source src={audio}  type="audio/mpeg" />
                       <source src="https://res.cloudinary.com/diggrhtle/video/upload/v1604576120/persona%20page/title_ig0xau.mp3"  type="audio/mpeg" />
+                      <source src={audio}  type="audio/mpeg" />
                     Your browser does not support the audio tag.
                     </audio>
                   </ section>
