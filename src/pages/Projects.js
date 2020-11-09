@@ -27,14 +27,15 @@ const Projects = ({ handleSound, sound }) => {
 
 
   const handleClick = (e) => {
-    setProjects({ ...defaultState, [e.target.id]: true })
+    setProjects({ ...defaultState, [e.target.id]: !projects[e.target.id] })
   };
 
   return (
-    <>
+    < >
       <Sound sound={sound} audio={audio} audioLink={audioLink} handleSound={handleSound} />
-      <h1>Stages Completed</h1>
-
+      <div className="projects__container ">
+      <h1 className="title" >Stages Complete</h1>
+    <main className="projects__main">
       <p id="persona" onClick={handleClick}>Stage 7: Persona Page</p>
       {projects.persona ? <Persona /> : null}
       <p id="loanCalculator" onClick={handleClick}>Stage 6: Loan Calculator</p>
@@ -47,9 +48,11 @@ const Projects = ({ handleSound, sound }) => {
       {projects.reactToDo ? <ReactToDo /> : null}
       <p id="jSToDo" onClick={handleClick}>Stage 1: Vanilla JavaScript ToDo App</p>
       {projects.jSToDo ? <JSToDo /> : null}
+    </main >
       <Link to='/about' style={{ textDecoration: 'none' }}>
         <p className="options">Back to About</p>
       </Link>
+    </div>
     </>
     /*     <Tabulation /> */
   )

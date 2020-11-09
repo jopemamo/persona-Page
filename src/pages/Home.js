@@ -37,7 +37,7 @@ const Home = () => {
               :
               <>
                 <Sound sound={sound} audio={audio} audioLink={audioLink} handleSound={handleSound} />
-                  <main>
+                  <main className="home__container">
                     <h1 id="homeTitle">Jorge's Adventure</h1>
                     {<Link className="enter" to='/about' style={{ textDecoration: 'none' }}>
                       <p className="options">Press Enter to Start</p>
