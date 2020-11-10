@@ -11,6 +11,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Modal from '../components/Modal';
 import LoanCalculator from './LoanCalculator';
 import WMW from './WMW';
+import BidraSammen from './BidraSammen';
 import JSToDo from '../components/JSToDo';
 import ReactToDo from '../components/ReactToDo';
 
@@ -48,7 +49,8 @@ const TimelineComponent = () => {
       name: "BidraSammen",
       description: "Our Graduation Project at Salt. An App done with React Native.",
       gitHub: "https://github.com/jopemoma/Graduation-Project",
-      modal: false,
+      modal: true,
+      component: BidraSammen,
     },
     {
       name: "Which Movie is Worse?",
@@ -91,7 +93,7 @@ const TimelineComponent = () => {
               <p className="project">{project.description}</p>
               <p className="project">You can check the repository on GitHub here: <a href={project.gitHub}>{project.name} </a> </p>
               {project.modal && 
-              <Modal project={LoanCalculator} />
+              <Modal project={project.component} />
               }
             </Paper>
           </TimelineContent>
