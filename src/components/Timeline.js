@@ -10,11 +10,21 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '../components/Modal';
+import LoanCalculator from './LoanCalculator';
 
 const useStyles = makeStyles((theme) => ({
+  root: {
+    margin:0,
+    padding: 0,
+    backgroundColor:"yellow",
+    display: "flex",
+    justifyContent: "flex-start",
+    alignItems: "flex-start",
+  },
+
   paper: {
     padding: '26px 16px',
-    "max-width": "60%",
+
   },
   secondaryTail: {
     backgroundColor: theme.palette.secondary.main,
@@ -27,12 +37,11 @@ const TimelineComponent = () => {
 
   return (
     <div className="timeline" >
-      <Timeline align="left">
+      <Timeline style={{marginRight:"50%"}}align="left">
         <TimelineItem>
           <TimelineOppositeContent>
             STAGE 7
-
-</TimelineOppositeContent>
+          </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot />
             <TimelineConnector />
@@ -40,30 +49,123 @@ const TimelineComponent = () => {
           <TimelineContent>
             <Paper elevation={3} className={classes.paper}>
               Persona Page
-    <p className="project">Amazing page</p>
-              <Modal />
+              <p className="project">This same page done with React</p>
+              <p className="project">You can check the repository on GitHub here: </p>
+              <Modal project={LoanCalculator} />
             </Paper>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
+          <TimelineOppositeContent>
+            STAGE 7
+          </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot />
             <TimelineConnector />
           </TimelineSeparator>
-          <TimelineContent>Code</TimelineContent>
+          <TimelineContent>
+            <Paper elevation={3} className={classes.paper}>
+              Persona Page
+              <p className="project">Amazing page</p>
+              <Modal project={LoanCalculator} />
+            </Paper>
+          </TimelineContent>
         </TimelineItem>
         <TimelineItem>
+          <TimelineOppositeContent>
+            STAGE 7
+          </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot />
             <TimelineConnector />
           </TimelineSeparator>
-          <TimelineContent>Sleep</TimelineContent>
+          <TimelineContent>
+            <Paper elevation={3} className={classes.paper}>
+              Persona Page
+              <p className="project">Amazing page</p>
+              <Modal project={LoanCalculator} />
+            </Paper>
+          </TimelineContent>
         </TimelineItem>
         <TimelineItem>
+          <TimelineOppositeContent>
+            STAGE 7
+          </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot />
+            <TimelineConnector />
           </TimelineSeparator>
-          <TimelineContent>Repeat</TimelineContent>
+          <TimelineContent>
+            <Paper elevation={3} className={classes.paper}>
+              Persona Page
+              <p className="project">Amazing page</p>
+              <Modal project={LoanCalculator} />
+            </Paper>
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineOppositeContent>
+            STAGE 7
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot />
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>
+            <Paper elevation={3} className={classes.paper}>
+              Persona Page
+              <p className="project">Amazing page</p>
+              <Modal project={LoanCalculator} />
+            </Paper>
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineOppositeContent>
+            STAGE 7
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot />
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>
+            <Paper elevation={3} className={classes.paper}>
+              Persona Page
+              <p className="project">Amazing page</p>
+              <Modal project={LoanCalculator} />
+            </Paper>
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineOppositeContent>
+            STAGE 7
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot />
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>
+            <Paper elevation={3} className={classes.paper}>
+              Persona Page
+              <p className="project">Amazing page</p>
+              <Modal project={LoanCalculator} />
+            </Paper>
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineOppositeContent>
+            STAGE 7
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot />
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>
+            <Paper elevation={3} className={classes.paper}>
+              Persona Page
+              <p className="project">Amazing page</p>
+              <Modal project={LoanCalculator} />
+            </Paper>
+          </TimelineContent>
         </TimelineItem>
       </Timeline>
     </div>

@@ -39,7 +39,9 @@ const Projects = ({ handleSound, sound }) => {
     < >
       <Sound sound={sound} audio={audio} audioLink={audioLink} handleSound={handleSound} />
       <div className="projects__container ">
+        <header>
         <h1 className="title" >Completed Stages</h1>
+        </header>
         <Timeline />
         <main className="projects__main">
           <p id="persona" onClick={handleClick}>Stage 7: Persona Page</p>

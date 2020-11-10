@@ -4,7 +4,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import { useSpring, animated } from 'react-spring/web.cjs';
-import LoanCalculator from './LoanCalculator';
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -51,7 +50,8 @@ Fade.propTypes = {
   onExited: PropTypes.func,
 };
 
-export default function SpringModal() {
+export default function SpringModal( { project }) {
+  const Component = project;
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
@@ -65,7 +65,7 @@ export default function SpringModal() {
 
   return (
     <div>
-      <button type="button" onClick={handleOpen}>
+      <button  className="ganon" onClick={handleOpen}>
         Click here to Demo!
       </button>
       <Modal
@@ -82,7 +82,7 @@ export default function SpringModal() {
       >
         <Fade in={open}>
           <div className={classes.paper}>
-            <LoanCalculator />
+            <Component />
           </div>
         </Fade>
       </Modal>

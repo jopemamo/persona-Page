@@ -1,7 +1,7 @@
-.projects__container {
+header {
   display: flex;
   flex-direction: column;
-
+  align-items: center;
 }
 
 .projects__main {
@@ -25,4 +25,5 @@ iframe {
   height: 600px;
   background-color: white;
 }
+
 
