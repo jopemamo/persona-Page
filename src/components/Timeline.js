@@ -91,7 +91,7 @@ const TimelineComponent = () => {
             <Paper elevation={3} className={classes.paper}>
               {project.name}
               <p className="project">{project.description}</p>
-              <p className="project">You can check the repository on GitHub here: <a href={project.gitHub}>{project.name} </a> </p>
+              <p className="project">You can check the repository on GitHub here: <a href={project.gitHub} target="_blank">{project.name} </a> </p>
               {project.modal && 
               <Modal project={project.component} />
               }
