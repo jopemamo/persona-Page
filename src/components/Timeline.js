@@ -7,23 +7,18 @@ import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
 import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 import Paper from '@material-ui/core/Paper';
-import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '../components/Modal';
 import LoanCalculator from './LoanCalculator';
+import WMW from './WMW';
+import JSToDo from '../components/JSToDo';
+import ReactToDo from '../components/ReactToDo';
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    margin:0,
-    padding: 0,
-    backgroundColor:"yellow",
-    display: "flex",
-    justifyContent: "flex-start",
-    alignItems: "flex-start",
-  },
 
   paper: {
     padding: '26px 16px',
+    minWidth: "60%",
 
   },
   secondaryTail: {
@@ -35,12 +30,56 @@ const TimelineComponent = () => {
 
   const classes = useStyles();
 
+  const projects = [
+    {
+      name: "Persona",
+      description: "The page where you are at right now! Done with React.",
+      gitHub: "https://github.com/jopemoma/persona-Page",
+      modal: false,
+    },
+    {
+      name: "LoanCalculator",
+      description: "A Loan Calculator done with React.",
+      gitHub: "https://github.com/jopemoma/loan-calculator",
+      modal: true,
+      component: LoanCalculator,
+    },
+    {
+      name: "BidraSammen",
+      description: "Our Graduation Project at Salt. An App done with React Native.",
+      gitHub: "https://github.com/jopemoma/Graduation-Project",
+      modal: false,
+    },
+    {
+      name: "Which Movie is Worse?",
+      description: "A game where you need to guess which movie has the worse rating! Done with React",
+      gitHub: "https://github.com/jopemoma/Which-movie-is-worse-Game",
+      modal: true,
+      component: WMW,
+    },
+    {
+      name: "React ToDo App",
+      description: "A ToDo App done with React",
+      gitHub: "https://github.com/jopemoma/React-ToDo-app",
+      modal: true,
+      component: ReactToDo,
+    },
+    {
+      name: "JavaScript ToDo App",
+      description: "A ToDo App done with Vanilla JavaScript",
+      gitHub: "https://github.com/jopemoma/Vanilla-JavaScript-ToDo-App",
+      modal: true,
+      component: JSToDo,
+    },
+  ]
+
   return (
     <div className="timeline" >
-      <Timeline style={{marginRight:"50%"}}align="left">
-        <TimelineItem>
+      <Timeline style={{marginRight:"30%"}}align="left">
+        {projects.map(( project, index) => (
+        <TimelineItem id={index}>
           <TimelineOppositeContent>
-            STAGE 7
+            STAGE {6-index}
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot />
@@ -48,125 +87,16 @@ const TimelineComponent = () => {
           </TimelineSeparator>
           <TimelineContent>
             <Paper elevation={3} className={classes.paper}>
-              Persona Page
-              <p className="project">This same page done with React</p>
-              <p className="project">You can check the repository on GitHub here: </p>
+              {project.name}
+              <p className="project">{project.description}</p>
+              <p className="project">You can check the repository on GitHub here: <a href={project.gitHub}>{project.name} </a> </p>
+              {project.modal && 
               <Modal project={LoanCalculator} />
+              }
             </Paper>
           </TimelineContent>
         </TimelineItem>
-        <TimelineItem>
-          <TimelineOppositeContent>
-            STAGE 7
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineDot />
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent>
-            <Paper elevation={3} className={classes.paper}>
-              Persona Page
-              <p className="project">Amazing page</p>
-              <Modal project={LoanCalculator} />
-            </Paper>
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineOppositeContent>
-            STAGE 7
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineDot />
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent>
-            <Paper elevation={3} className={classes.paper}>
-              Persona Page
-              <p className="project">Amazing page</p>
-              <Modal project={LoanCalculator} />
-            </Paper>
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineOppositeContent>
-            STAGE 7
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineDot />
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent>
-            <Paper elevation={3} className={classes.paper}>
-              Persona Page
-              <p className="project">Amazing page</p>
-              <Modal project={LoanCalculator} />
-            </Paper>
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineOppositeContent>
-            STAGE 7
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineDot />
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent>
-            <Paper elevation={3} className={classes.paper}>
-              Persona Page
-              <p className="project">Amazing page</p>
-              <Modal project={LoanCalculator} />
-            </Paper>
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineOppositeContent>
-            STAGE 7
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineDot />
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent>
-            <Paper elevation={3} className={classes.paper}>
-              Persona Page
-              <p className="project">Amazing page</p>
-              <Modal project={LoanCalculator} />
-            </Paper>
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineOppositeContent>
-            STAGE 7
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineDot />
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent>
-            <Paper elevation={3} className={classes.paper}>
-              Persona Page
-              <p className="project">Amazing page</p>
-              <Modal project={LoanCalculator} />
-            </Paper>
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineOppositeContent>
-            STAGE 7
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineDot />
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent>
-            <Paper elevation={3} className={classes.paper}>
-              Persona Page
-              <p className="project">Amazing page</p>
-              <Modal project={LoanCalculator} />
-            </Paper>
-          </TimelineContent>
-        </TimelineItem>
+        ))}
       </Timeline>
     </div>
   );
