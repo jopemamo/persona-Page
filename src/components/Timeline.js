@@ -79,7 +79,7 @@ const TimelineComponent = () => {
     <div className="timeline" >
       <Timeline style={{marginRight:"30%"}}align="left">
         {projects.map(( project, index) => (
-        <TimelineItem id={index}>
+        <TimelineItem key={index}>
           <TimelineOppositeContent>
             STAGE {6-index}
           </TimelineOppositeContent>
@@ -89,9 +89,9 @@ const TimelineComponent = () => {
           </TimelineSeparator>
           <TimelineContent>
             <Paper elevation={3} className={classes.paper}>
-              {project.name}
+              <p>{project.name} </p>
               <p className="project">{project.description}</p>
-              <p className="project">You can check the repository on GitHub here: <a href={project.gitHub} target="_blank">{project.name} </a> </p>
+              <p className="project">You can check the repository on GitHub here: <a href={project.gitHub} className="nes-btn is-small is-primary"target="_blank" rel="noreferrer" >{project.name} </a> </p>
               {project.modal && 
               <Modal project={project.component} />
               }

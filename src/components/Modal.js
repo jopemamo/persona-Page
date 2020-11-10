@@ -5,6 +5,7 @@ import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import { useSpring, animated } from 'react-spring/web.cjs';
 
+
 const useStyles = makeStyles((theme) => ({
   modal: {
     display: 'flex',
@@ -65,7 +66,7 @@ export default function SpringModal( { project }) {
 
   return (
     <div>
-      <button  className="ganon" onClick={handleOpen}>
+      <button className="nes-btn is-success" onClick={handleOpen}>
         Click here to Demo!
       </button>
       <Modal
