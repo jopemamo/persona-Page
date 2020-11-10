@@ -20,7 +20,7 @@ const Projects = ({ handleSound, sound }) => {
         </header>
         <Timeline />
         <Link to='/about' style={{ textDecoration: 'none' }}>
-          <p className="options">Back to About</p>
+          <p id="projects__back"className="options">Back to About</p>
         </Link>
       </div>
     </>
