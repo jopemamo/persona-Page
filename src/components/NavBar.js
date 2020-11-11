@@ -28,9 +28,9 @@ export default function ButtonAppBar({ handleSound, sound, audioLink, audio }) {
           <NavLink to="/about">
             <h1>About</h1>
           </NavLink>
-          <NavLink to="/projects">
+          <HashLink to="/projects#stagesTitle">
             <h1>Projects</h1>
-          </NavLink>
+          </HashLink>
           <HashLink to="/projects#contact">
             <h1>Contact Information</h1>
           </HashLink>
