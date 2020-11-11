@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { HashLink  } from 'react-router-hash-link';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -14,23 +15,26 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ButtonAppBar( { handleSound, sound, audioLink, audio }) {
+export default function ButtonAppBar({ handleSound, sound, audioLink, audio }) {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
       <AppBar position="fixed">
         <Toolbar control="true" >
-          <Link to="/" style={{ textDecoration: 'none' }}>
-          <h1>Jorge's Adventure</h1>
-          </Link>
-          <Link to="/about" style={{ textDecoration: 'none' }}>
-          <h1>About</h1>
-          </Link>
-          <Link to="/projects" style={{ textDecoration: 'none' }}>
-          <h1>Projects</h1>
-          </Link>
-          <Sound  sound={sound} audio={audio} audioLink={audioLink} handleSound={handleSound}/>
+          <NavLink to="/" >
+            <h1>Jorge's Adventure</h1>
+          </NavLink>
+          <NavLink to="/about">
+            <h1>About</h1>
+          </NavLink>
+          <NavLink to="/projects">
+            <h1>Projects</h1>
+          </NavLink>
+          <HashLink to="/projects#contact">
+            <h1>Contact</h1>
+          </HashLink>
+          <Sound sound={sound} audio={audio} audioLink={audioLink} handleSound={handleSound} />
         </Toolbar>
       </AppBar>
       <Toolbar />

@@ -102,7 +102,7 @@ const TimelineComponent = () => {
             </TimelineContent>
           </TimelineItem>
         ))}
-        <TimelineItem>
+        <TimelineItem id="contact">
           <TimelineOppositeContent>
             STAGE 0
           </TimelineOppositeContent>
