@@ -32,7 +32,7 @@ export default function ButtonAppBar({ handleSound, sound, audioLink, audio }) {
             <h1>Projects</h1>
           </NavLink>
           <HashLink to="/projects#contact">
-            <h1>Contact</h1>
+            <h1>Contact Information</h1>
           </HashLink>
           <Sound sound={sound} audio={audio} audioLink={audioLink} handleSound={handleSound} />
         </Toolbar>

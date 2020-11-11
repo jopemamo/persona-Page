@@ -22,9 +22,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  margin: 1%;
+  align-items: center;
   max-width: 15%;
-  max-height: 0.1%;
 }
 
 h1 {
@@ -55,8 +54,9 @@ h1 {
 }
 
 .section__sound__p {
-  padding: 0.9%;
   font-size: 0.9rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .MuiToolbar-gutters {
