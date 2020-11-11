@@ -19,7 +19,11 @@ const useStyles = makeStyles((theme) => ({
 
   paper: {
     padding: '26px 16px',
-    minWidth: "400px"
+    minWidth: "400px",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    textAlign:"center"
   },
   secondaryTail: {
     backgroundColor: theme.palette.secondary.main,
@@ -77,10 +81,30 @@ const TimelineComponent = () => {
   return (
     <div className="timeline" >
       <Timeline align="alternate">
-        {projects.map(( project, index) => (
-        <TimelineItem key={index}>
+        {projects.map((project, index) => (
+          <TimelineItem key={index}>
+            <TimelineOppositeContent>
+              STAGE {6 - index}
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineDot />
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent>
+              <Paper elevation={3} className={classes.paper}>
+                <p>{project.name} </p>
+                <p className="project">{project.description}</p>
+                <p className="project">You can check the repository on GitHub here: <a href={project.gitHub} className="nes-btn is-small is-primary" target="_blank" rel="noreferrer" >{project.name} </a> </p>
+                {project.modal &&
+                  <Modal project={project.component} />
+                }
+              </Paper>
+            </TimelineContent>
+          </TimelineItem>
+        ))}
+        <TimelineItem>
           <TimelineOppositeContent>
-            STAGE {6-index}
+            STAGE 0
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot />
@@ -88,16 +112,16 @@ const TimelineComponent = () => {
           </TimelineSeparator>
           <TimelineContent>
             <Paper elevation={3} className={classes.paper}>
-              <p>{project.name} </p>
-              <p className="project">{project.description}</p>
-              <p className="project">You can check the repository on GitHub here: <a href={project.gitHub} className="nes-btn is-small is-primary" target="_blank" rel="noreferrer" >{project.name} </a> </p>
-              {project.modal && 
-              <Modal project={project.component} />
-              }
+              <p>Contact Information </p>
+              <img src="https://res.cloudinary.com/diggrhtle/image/upload/v1604332718/persona%20page/Jorge_Moreno_2_z9iur1.jpg" alt="The Hero" />
+              <section >
+                <i className="nes-icon github is-large"></i>
+                <i className="nes-icon gmail is-large"></i>
+                <i className="nes-icon linkedin is-large"></i>
+              </section>
             </Paper>
           </TimelineContent>
         </TimelineItem>
-        ))}
       </Timeline>
     </div>
   );
