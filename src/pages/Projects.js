@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import audio from '../audios/select_screen.mp3';
 import Timeline from '../components/Timeline';
 import NavBar from '../components/NavBar';
