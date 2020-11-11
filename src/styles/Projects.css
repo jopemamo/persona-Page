@@ -23,6 +23,7 @@ header {
 
 .timeline {
   min-width: 50%;
+  max-width: 80%;
 }
 
 .project {
@@ -44,7 +45,7 @@ img {
   max-width: 30%;
 }
 
-section {
+.section__contact {
   display: flex;
   justify-content: space-between;
   min-width: 50%;

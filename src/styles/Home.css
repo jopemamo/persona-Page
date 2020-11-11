@@ -50,9 +50,9 @@
 }
 
 #homeTitle {
-  font-size: 120px;
-  padding-top:95px;
-  margin-bottom:60px;
+  font-size: 10rem;
+  padding-top:10%;
+  margin-bottom:7%;
   -webkit-animation-duration: 7s;
   animation-duration: 7s;
   -webkit-animation-fill-mode: both;

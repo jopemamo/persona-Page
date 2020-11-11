@@ -114,10 +114,16 @@ const TimelineComponent = () => {
             <Paper elevation={3} className={classes.paper}>
               <p>Contact Information </p>
               <img src="https://res.cloudinary.com/diggrhtle/image/upload/v1604332718/persona%20page/Jorge_Moreno_2_z9iur1.jpg" alt="The Hero" />
-              <section >
+              <section className="section__contact" >
+              <a href="https://github.com/jopemoma" target="_blank" rel="noreferrer" >
                 <i className="nes-icon github is-large"></i>
+              </a>
+              <a href="mailto:jorge.moreno@appliedtechnology.se" target="_blank" rel="noreferrer" >
                 <i className="nes-icon gmail is-large"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/jorge-moreno-mateo/" target="_blank" rel="noreferrer" >
                 <i className="nes-icon linkedin is-large"></i>
+              </a>
               </section>
             </Paper>
           </TimelineContent>

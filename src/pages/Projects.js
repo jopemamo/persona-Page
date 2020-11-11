@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Sound from '../components/Sound';
 import audio from '../audios/select_screen.mp3';
 import Timeline from '../components/Timeline';
+import NavBar from '../components/NavBar';
 import '../styles/Projects.css'
 
 
@@ -13,7 +14,7 @@ const Projects = ({ handleSound, sound }) => {
 
   return (
     < div className="projectsPage">
-      <Sound sound={sound} audio={audio} audioLink={audioLink} handleSound={handleSound} />
+      <NavBar sound={sound} audio={audio} audioLink={audioLink} handleSound={handleSound}/>
       <div className="projects__container ">
         <header>
         <h1 className="title" >Completed Stages</h1>

@@ -7,13 +7,11 @@ import './styles/App.css';
 
 const App = () => {
 
-  const [submitted, setSubmitted] = useState(false);
+  
 
   const [sound, setSound] = useState(false);
 
-  const handleKeyPressed = () => {
-    setSubmitted(true)
-  }
+
 
   const handleSound = () => {
     setSound(!sound);
@@ -32,7 +30,7 @@ const App = () => {
           }>
           </Route>
           <Route path='/' render={() =>
-            <Home submitted={submitted} handleKeyPressed={handleKeyPressed} handleSound={handleSound} sound={sound} />
+            <Home  handleSound={handleSound} sound={sound} />
           }
           >
           </Route>

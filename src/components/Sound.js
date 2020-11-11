@@ -10,7 +10,7 @@ const Sound = ({ sound, audio, audioLink, handleSound }) => {
             <source src={audioLink} type="audio/mpeg" />
             <source src={audio} type="audio/mpeg" />
       Your browser does not support the audio tag.
-      </audio>
+          </audio>
         </ section>
         :
         <section className="section__sound">

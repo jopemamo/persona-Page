@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
 import KeyHandler from '../components/KeyHandler';
+import NavBar from '../components/NavBar';
 import Sound from '../components/Sound';
 import audio from '../audios/overworld.mp3';
 import '../styles/About.css';
@@ -9,7 +10,7 @@ import '../styles/About.css';
 const About = ({ handleSound, sound }) => {
   const [submitted, setSubmitted] = useState(false)
 
- const audioLink = "https://res.cloudinary.com/diggrhtle/video/upload/v1604578021/persona%20page/overworld_rtg6c4.mp3";
+  const audioLink = "https://res.cloudinary.com/diggrhtle/video/upload/v1604578021/persona%20page/overworld_rtg6c4.mp3";
 
   const handleKeyPressed = () => {
     setSubmitted(true)
@@ -22,7 +23,7 @@ const About = ({ handleSound, sound }) => {
           <Redirect to="/projects" />
           :
           <>
-            <Sound sound={sound} audio={audio} audioLink={audioLink} handleSound={handleSound} />
+            <NavBar sound={sound} audio={audio} audioLink={audioLink} handleSound={handleSound}/>
             <main>
               <section className="aboutImages" >
                 <img id="theHero" src="https://res.cloudinary.com/diggrhtle/image/upload/v1604332718/persona%20page/Jorge_Moreno_2_z9iur1.jpg" alt="The Hero" />
