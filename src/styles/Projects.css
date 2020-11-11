@@ -1,18 +1,28 @@
+.projectsPage {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.projects__main {
-  width: 70%;
+.projects__container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  min-width: 100%;
 }
 
 .title {
   font-size: 5rem;
+}
+
+.timeline {
+  min-width: 50%;
 }
 
 .project {
@@ -28,4 +38,9 @@ iframe {
 
 #projects__back {
   margin-top: 0;
+}
+
+a {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.7rem;
 }

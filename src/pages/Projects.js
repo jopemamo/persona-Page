@@ -12,7 +12,7 @@ const Projects = ({ handleSound, sound }) => {
   const audioLink = "https://res.cloudinary.com/diggrhtle/video/upload/v1604578026/persona%20page/select_screen_z8yyms.mp3"
 
   return (
-    < >
+    < div className="projectsPage">
       <Sound sound={sound} audio={audio} audioLink={audioLink} handleSound={handleSound} />
       <div className="projects__container ">
         <header>
@@ -23,7 +23,7 @@ const Projects = ({ handleSound, sound }) => {
           <p id="projects__back"className="options">Back to About</p>
         </Link>
       </div>
-    </>
+    </div>
   )
 }
 

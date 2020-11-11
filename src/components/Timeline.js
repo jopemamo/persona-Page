@@ -19,8 +19,7 @@ const useStyles = makeStyles((theme) => ({
 
   paper: {
     padding: '26px 16px',
-    minWidth: "60%",
-
+    minWidth: "400px"
   },
   secondaryTail: {
     backgroundColor: theme.palette.secondary.main,
@@ -77,7 +76,7 @@ const TimelineComponent = () => {
 
   return (
     <div className="timeline" >
-      <Timeline style={{marginRight:"30%"}}align="left">
+      <Timeline align="alternate">
         {projects.map(( project, index) => (
         <TimelineItem key={index}>
           <TimelineOppositeContent>
@@ -91,7 +90,7 @@ const TimelineComponent = () => {
             <Paper elevation={3} className={classes.paper}>
               <p>{project.name} </p>
               <p className="project">{project.description}</p>
-              <p className="project">You can check the repository on GitHub here: <a href={project.gitHub} className="nes-btn is-small is-primary"target="_blank" rel="noreferrer" >{project.name} </a> </p>
+              <p className="project">You can check the repository on GitHub here: <a href={project.gitHub} className="nes-btn is-small is-primary" target="_blank" rel="noreferrer" >{project.name} </a> </p>
               {project.modal && 
               <Modal project={project.component} />
               }
