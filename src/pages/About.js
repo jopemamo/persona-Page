@@ -3,7 +3,6 @@ import { Link, Redirect } from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
 import KeyHandler from '../components/KeyHandler';
 import NavBar from '../components/NavBar';
-import Sound from '../components/Sound';
 import audio from '../audios/overworld.mp3';
 import '../styles/About.css';
 

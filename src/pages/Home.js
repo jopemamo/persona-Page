@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import KeyHandler from '../components/KeyHandler';
-import Sound from '../components/Sound';
 import audio from '../audios/title.mp3';
 import NavBar from '../components/NavBar';
 import '../styles/Home.css';
