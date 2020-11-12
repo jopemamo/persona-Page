@@ -14,6 +14,7 @@ import WMW from './WMW';
 import BidraSammen from './BidraSammen';
 import JSToDo from '../components/JSToDo';
 import ReactToDo from '../components/ReactToDo';
+import cv from '../files/CV_Jorge_Moreno.pdf';
 
 const useStyles = makeStyles((theme) => ({
 
@@ -122,6 +123,9 @@ const TimelineComponent = () => {
                 <i className="nes-icon gmail is-large"></i>
               </a>
               <a href="https://www.linkedin.com/in/jorge-moreno-mateo/" target="_blank" rel="noreferrer" >
+                <i className="nes-icon linkedin is-large"></i>
+              </a>
+              <a href={cv} target="_blank" rel="noreferrer" >
                 <i className="nes-icon linkedin is-large"></i>
               </a>
               </section>
