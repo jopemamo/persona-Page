@@ -1,4 +1,6 @@
-main {
+
+
+.about__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,15 +21,7 @@ main {
   text-align: start;
 }
 
-@-webkit-keyframes bounceInLeft {
-  0% {
-     opacity: 0;
-     -webkit-transform: translateX(-100px);
-  }
-  100% {
-     -webkit-transform: translateX(0);
-  }
-}
+
 
 @keyframes bounceInLeft {
   0% {
@@ -40,40 +34,62 @@ main {
 }
 
 #theHero  {
-  max-width: 400px;
-  max-height: 500px;
-  margin-bottom:60px;
+  max-width: 100px;
+  max-height: 60px;
+  margin-top: 14%;
   -webkit-animation-duration: 20s; 
   animation-duration: 20s; 
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both; 
   -webkit-animation-name: bounceInLeft;
   animation-name: bounceInLeft;
+  z-index:2;
+  position: relative;;
 }
 
 @-webkit-keyframes bounceInRight {
   0% {
-     opacity: 0;
+    opacity: 0;
      -webkit-transform: translateX(650px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+    }
   }
-  100% {
-     -webkit-transform: translateX(0);
+  
+  @keyframes bounceInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(650px);
+    }
+    100% {
+      transform: translateX(0);
+    }
   }
-}
-
-@keyframes bounceInRight {
-  0% {
-     opacity: 0;
-     transform: translateX(650px);
+  .container {
+    overflow: hidden;
+    width: 100%;
   }
-  100% {
-     transform: translateX(0);
+  
+  #animate-area	{ 
+    width: 100%; 
+    min-height: 400px;
+    max-height: 100%;
+    background-image: url(https://res.cloudinary.com/diggrhtle/image/upload/v1605181965/persona%20page/alien_zgws4e.jpg);
+    background-size: contain;
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+    
+    animation: animatedBackground 50s infinite;
   }
-}
-.www {
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-fill-mode: both;
+        @keyframes animatedBackground {
+          from { background-position: 100% 0; }
+          to { background-position: 0 0; }
+        }
+  .www {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: bounceInRight;
   animation-name: bounceInRight;
@@ -133,8 +149,7 @@ main {
   animation-name: bounceInRight;
 }
 .mongo {
-  background: white;
-  border-radius: 50%;
+
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
   animation-delay:7s;
