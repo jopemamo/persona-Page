@@ -6,18 +6,18 @@
   align-items: center;
 }
 
-.technologies img {
-  max-width: 100px;
-  max-height: 100px;
+.technologies {
+  margin: 1%;
 }
-
-.aboutImages {
-  display: flex;
-  flex-direction: row;
+.technologies svg {
+  margin: 0.5%;
+  max-width: 80px;
+  max-height: 80px;
 }
 
 .text {
   margin: 30px;
+  padding-top: 3%;
   text-align: start;
 }
 
@@ -25,13 +25,22 @@
 
 @keyframes bounceInLeft {
   0% {
-     opacity: 0;
-     transform: translateX(-1000px);
+     transform: translateX(-100%);
   }
   100% {
-     transform: translateX(0);
+     transform: translateX(1500%);
   }
 }
+
+@-webkit-keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+     -webkit-transform: translateX(-50px);
+    }
+    100% {
+      -webkit-transform: translateX(1000%);
+    }
+  }
 
 #theHero  {
   max-width: 100px;
@@ -86,14 +95,6 @@
           from { background-position: 100% 0; }
           to { background-position: 0 0; }
         }
-  .www {
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
-    -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: bounceInRight;
-  animation-name: bounceInRight;
-}
 .js {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
