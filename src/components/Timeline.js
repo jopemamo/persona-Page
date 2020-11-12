@@ -125,8 +125,9 @@ const TimelineComponent = () => {
               <a href="https://www.linkedin.com/in/jorge-moreno-mateo/" target="_blank" rel="noreferrer" >
                 <i className="nes-icon linkedin is-large"></i>
               </a>
-              <a href={cv} target="_blank" rel="noreferrer" >
-                <i className="nes-icon linkedin is-large"></i>
+              <a className="anchor__CV" href={cv} target="_blank" rel="noreferrer" >
+{/*               <!-- Copyright Nintendo --> */}
+                <img className="nes-avatar link" src="https://res.cloudinary.com/diggrhtle/image/upload/v1605175715/persona%20page/link_cv6kti.gif"  alt="CV" />
               </a>
               </section>
             </Paper>
