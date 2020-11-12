@@ -1,17 +1,35 @@
-# Getting Started
+# Persona-Page
 
-Working on it...
+# Status
+Working on making it responsive to the different screen sizes and resolutions, specially phones.
 
-## Available Scripts
+# Instructions
+  If you want to run it in your machine: 
+  
+      git clone git@github.com:jopemoma/persona-Page.git
 
-In the project directory, you can run:
+      cd persona-Page
+      
+      npm install
+      
+      npm start
+# Resources
+Done in React with other packages like: 
 
-### `npm start`
+https://material-ui.com/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+https://www.npmjs.com/package/typewriter-effect#options
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+https://www.npmjs.com/package/typewriter-effect#options
+
+https://nostalgic-css.github.io/NES.css/
+
+https://devicon.dev/
+
+
+# Deployment
+  It is deployed at netlify and connected to the main branch of this repository to change automatically:
+
+  https://jorges-adventure.netlify.app/
 
 
