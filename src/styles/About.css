@@ -306,13 +306,24 @@
     min-height: 200px;
   }
   .text {
-    font-size: 0.5rem;
-    margin-top: 1px;
+    font-size: 0.7rem;
+    margin-top: 0px;
     padding: 0.3%;
+  }
+  #aboutOptions {
+    font-size: 0.7rem;
   }
 }
 @media (max-width: 360px) {
   #theHero  {
      margin-top: 21%;
+  }
+  .text {
+    font-size: 0.5rem;
+    margin-top: 0px;
+    padding: 0;
+  }
+  #aboutOptions {
+    font-size: 0.5rem;
   }
 }

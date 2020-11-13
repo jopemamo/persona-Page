@@ -78,7 +78,7 @@ const About = ({ handleSound, sound }) => {
               </div>
 
               <Link to='/projects' style={{ textDecoration: 'none' }}>
-                <p className="options" >Press Enter to Continue</p>
+                <p id="aboutOptions" className="options" >Press Enter to Continue</p>
                 <KeyHandler handleKeyPressed={handleKeyPressed} />
               </Link>
             </main>
