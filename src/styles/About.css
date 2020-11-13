@@ -22,8 +22,9 @@
 
 .text {
   margin: 30px;
-  padding-top: 3%;
-  text-align: start;
+  padding: 2%;
+  width: 100%;
+  text-align: center;
 }
 
 
@@ -195,7 +196,7 @@
      margin-top: 19%;
   }
 }
-@media (max-width: 1380px) {
+@media (max-width: 1400px) {
   #theHero  {
      margin-top: 21%;
   }
@@ -208,6 +209,10 @@
 @media (max-width: 1150px) {
   #theHero  {
      margin-top: 24%;
+  }
+  .text {
+    margin-top: 10px;
+    padding-top: 0;
   }
 }
 
@@ -229,10 +234,21 @@
         -webkit-transform: translateX(300px);
       }
     }
+    #animate-area	{ 
+      min-height: 300px;
+    }
+    #theHero  {
+      margin-top: 21.8%;
+   }
+    .text {
+      margin-top: 3px;
+      padding: 1%;
+    }
 }
 
 @media (max-width: 825px) {
   #theHero {
+    margin-top: 24%;
     max-width: 80px;
     max-height: 40px;
   }
@@ -247,6 +263,9 @@
   #theHero {
     max-width: 80px;
     max-height: 40px;
+  }
+  #animate-area	{ 
+    min-height: 250px;
   }
   .technologies svg {
     margin-top: 3%;
@@ -282,6 +301,14 @@
      margin-top: 22%;
      max-width: 70px;
      max-height: 30px;
+  }
+  #animate-area	{ 
+    min-height: 200px;
+  }
+  .text {
+    font-size: 0.5rem;
+    margin-top: 1px;
+    padding: 0.3%;
   }
 }
 @media (max-width: 360px) {
