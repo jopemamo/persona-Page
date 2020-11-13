@@ -70,7 +70,6 @@ h1 {
   width: 100%;
 }
 
-
 @media (max-width: 960px) {
   .section__sound {
     width: 60%
@@ -80,6 +79,7 @@ h1 {
     width: 10%;
   }
 }
+
 @media (max-width: 600px) {
   .section__sound {
     width: 80%
