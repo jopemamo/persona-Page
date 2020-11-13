@@ -43,7 +43,7 @@ h1 {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  max-width: 15%;
+  width: 35%;
 }
 
 .muted {
@@ -53,8 +53,8 @@ h1 {
 
 .sound {
   background-color: white;
-  max-width: 15%;
-  max-height: 5%;
+  width: 10%;
+  height: 7%;
 }
 
 .section__sound__p {
@@ -70,3 +70,22 @@ h1 {
   width: 100%;
 }
 
+
+@media (max-width: 960px) {
+  .section__sound {
+    width: 60%
+  }
+
+  .sound {
+    width: 10%;
+  }
+}
+@media (max-width: 600px) {
+  .section__sound {
+    width: 80%
+  }
+
+  .sound {
+    width: 15%;
+  }
+}

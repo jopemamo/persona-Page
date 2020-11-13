@@ -113,7 +113,7 @@ const TimelineComponent = () => {
           </TimelineSeparator>
           <TimelineContent>
             <Paper elevation={3} className={classes.paper}>
-              <p>Contact Information </p>
+              <p className="project__title">Contact Information </p>
               <img className="theHero" src="https://res.cloudinary.com/diggrhtle/image/upload/v1604332718/persona%20page/Jorge_Moreno_2_z9iur1.jpg" alt="The Hero" />
               <section className="section__contact" >
               <a href="https://github.com/jopemoma" target="_blank" rel="noreferrer" >
