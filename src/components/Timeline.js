@@ -93,7 +93,7 @@ const TimelineComponent = () => {
             </TimelineSeparator>
             <TimelineContent>
               <Paper elevation={3} className={classes.paper}>
-                <p>{project.name} </p>
+                <p className="project__title">{project.name} </p>
                 <p className="project">{project.description}</p>
                 <p className="project">You can check the repository on GitHub here: <a href={project.gitHub} className="nes-btn is-small is-primary" target="_blank" rel="noreferrer" >{project.name} </a> </p>
                 {project.modal &&
