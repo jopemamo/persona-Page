@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: triforce;
   src: url('fonts/Triforce.ttf') format('truetype');
@@ -18,14 +19,6 @@ body {
   color: white;
 }
 
-.section__sound {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  max-width: 15%;
-}
-
 h1 {
   font-family: 'triforce';
   color: gold;
@@ -36,6 +29,21 @@ h1 {
   margin-top: 10%;
   animation: blinker 2s linear infinite;
   font-size: 1rem;
+  text-align: center;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.section__sound {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 15%;
 }
 
 .muted {
@@ -43,11 +51,6 @@ h1 {
 }
 
 
-@keyframes blinker {
-  50% {
-    opacity: 0;
-  }
-}
 .sound {
   background-color: white;
   max-width: 15%;

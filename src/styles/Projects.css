@@ -1,13 +1,8 @@
+
 .projectsPage {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .projects__container {
@@ -15,6 +10,12 @@ header {
   flex-direction: column;
   align-items: center;
   min-width: 100%;
+}
+
+.projects__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title {
@@ -42,7 +43,12 @@ iframe {
   margin-top: 0;
 }
 
-img {
+a {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.7rem;
+}
+
+.theHero {
   max-width: 30%;
 }
 
@@ -52,10 +58,7 @@ img {
   min-width: 50%;
   padding: 1%;
 }
-a {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 0.7rem;
-}
+
 
 .link {
   min-width: 64px;

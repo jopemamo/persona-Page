@@ -14,12 +14,12 @@ const Projects = ({ handleSound, sound }) => {
     < div className="projectsPage">
       <NavBar sound={sound} audio={audio} audioLink={audioLink} handleSound={handleSound}/>
       <div className="projects__container ">
-        <header>
+        <header className="projects__header">
         <h1 className="title" id="stagesTitle" >Completed Stages</h1>
         </header>
         <Timeline />
         <a href="#stagesTitle" style={{ textDecoration: 'none' }}>
-          <p id="projects__back"className="options">Back to Top</p>
+          <p id="projects__back" className="options">Back to Top</p>
         </a>
       </div>
     </div>
