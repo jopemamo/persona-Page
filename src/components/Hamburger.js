@@ -2,7 +2,6 @@ import {
   Drawer,
   IconButton,
   List,
-  ListItem,
 } from "@material-ui/core";
 import Divider from '@material-ui/core/Divider';
 import { makeStyles } from "@material-ui/core/styles";
@@ -42,10 +41,8 @@ const Hamburger = ({ navLinks }) => {
       <List>
         {navLinks.map(({ title, path }, index) => (
         <a href={path} key={title} >
-          <ListItem button key={index}>
-            <h1 style={{fontSize:"2rem"}}>{title}</h1>
-          </ListItem>
-          </a>
+            <h1 style={{fontSize:"2rem", padding:"3%"}}>{title}</h1>
+        </a>
         ))}
       </List>
       <Divider />
