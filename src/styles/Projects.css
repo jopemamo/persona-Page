@@ -55,7 +55,7 @@ a {
 .section__contact {
   display: flex;
   justify-content: space-between;
-  min-width: 50%;
+  min-width: 80%;
   padding: 1%;
 }
 
@@ -80,6 +80,12 @@ a {
     width: 800px;
     height: 700px;
     background-color: white;
+  }
+}
+@media (max-width:960px) {
+  .link {
+    min-width: 45px;
+    min-height: 45px;
   }
 }
 
