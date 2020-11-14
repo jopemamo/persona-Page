@@ -1,9 +1,7 @@
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
 import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Hidden from '@material-ui/core/Hidden';
+import { AppBar, Toolbar, Hidden } from '@material-ui/core';
 import Hamburger from './Hamburger';
 import Sound from './Sound';
 

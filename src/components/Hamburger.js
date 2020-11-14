@@ -1,15 +1,8 @@
-import {
-  Drawer,
-  IconButton,
-  List,
-} from "@material-ui/core";
-import Divider from '@material-ui/core/Divider';
+import React, { useState } from "react";
 import { HashLink } from 'react-router-hash-link';
+import { Drawer, IconButton, List, Divider } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { Menu } from "@material-ui/icons";
-import * as React from "react";
-import { useState } from "react";
-
 
 const useStyles = makeStyles({
   list: {
