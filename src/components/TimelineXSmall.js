@@ -1,5 +1,4 @@
 import React from 'react'
-import { Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineDot, TimelineOppositeContent } from '@material-ui/lab';
 import Paper from '@material-ui/core/Paper';
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '../components/Modal';
@@ -22,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const TimelineComponent = () => {
+const TimelineXSmall = () => {
 
   const classes = useStyles();
 
@@ -72,17 +71,9 @@ const TimelineComponent = () => {
 
   return (
     <div className="timeline" >
-      <Timeline align="alternate">
         {projects.map((project, index) => (
-          <TimelineItem key={index}>
-            <TimelineOppositeContent>
-            <p>STAGE {6 - index}</p>
-            </TimelineOppositeContent>
-            <TimelineSeparator>
-              <TimelineDot />
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent>
+          <div key={index}>
+              <p className="smallStage" >STAGE {6 - index}</p>
               <Paper elevation={3} className={classes.paper}>
                 <p className="project__title">{project.name} </p>
                 <p className="project">{project.description}</p>
@@ -91,18 +82,10 @@ const TimelineComponent = () => {
                   <Modal project={project.component} />
                 }
               </Paper>
-            </TimelineContent>
-          </TimelineItem>
+          </div>
         ))}
-        <TimelineItem id="contact">
-          <TimelineOppositeContent>
-          <p>STAGE 0</p>
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineDot />
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent>
+        <div id="contact">
+          <p className="smallStage" >STAGE 0</p>
             <Paper elevation={3} className={classes.paper}>
               <p className="project__title">Contact Information </p>
               <img className="theHero" src="https://res.cloudinary.com/diggrhtle/image/upload/v1604332718/persona%20page/Jorge_Moreno_2_z9iur1.jpg" alt="The Hero" />
@@ -122,11 +105,9 @@ const TimelineComponent = () => {
               </a>
               </section>
             </Paper>
-          </TimelineContent>
-        </TimelineItem>
-      </Timeline>
+        </div>
     </div>
   );
 }
 
-export default TimelineComponent;
+export default TimelineXSmall;

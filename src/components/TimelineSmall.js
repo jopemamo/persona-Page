@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const TimelineComponent = () => {
+const TimelineSmall = () => {
 
   const classes = useStyles();
 
@@ -72,11 +72,11 @@ const TimelineComponent = () => {
 
   return (
     <div className="timeline" >
-      <Timeline align="alternate">
+      <Timeline align="left" style={{maxWidth: "90%"}}>
         {projects.map((project, index) => (
           <TimelineItem key={index}>
             <TimelineOppositeContent>
-            <p>STAGE {6 - index}</p>
+              <p className="smallStage" >STAGE {6 - index}</p>
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineDot />
@@ -96,7 +96,7 @@ const TimelineComponent = () => {
         ))}
         <TimelineItem id="contact">
           <TimelineOppositeContent>
-          <p>STAGE 0</p>
+          <p className="smallStage" >STAGE 0</p>
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot />
@@ -129,4 +129,4 @@ const TimelineComponent = () => {
   );
 }
 
-export default TimelineComponent;
+export default TimelineSmall;
