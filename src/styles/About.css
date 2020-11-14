@@ -205,6 +205,9 @@
   #theHero  {
      margin-top: 23%;
   }
+  #animate-area	{ 
+    animation: animatedBackground 20s infinite;
+  }
 }
 @media (max-width: 1150px) {
   #theHero  {
@@ -236,6 +239,7 @@
     }
     #animate-area	{ 
       min-height: 300px;
+      animation: animatedBackground 15s infinite;
     }
     #theHero  {
       margin-top: 21.8%;
@@ -256,7 +260,9 @@
     max-width: 50ox;
     max-height: 50px;
   }
-
+  #animate-area	{ 
+    animation: animatedBackground 10s infinite;
+  }
 }
 
 @media (max-width: 650px) {
@@ -272,23 +278,6 @@
     max-width: 50ox;
     max-height: 50px;
   }
-  @keyframes bounceInLeft {
-    0% {
-       transform: translateX(-50px);
-    }
-    100% {
-       transform: translateX(300%);
-    }
-  }
-  
-  @-webkit-keyframes bounceInLeft {
-    0% {
-       -webkit-transform: translateX(-50px);
-      }
-      100% {
-        -webkit-transform: translateX(300%);
-      }
-    }
 }
 
 @media (max-width: 580px) {
