@@ -35,7 +35,7 @@
 
 iframe {
   width: 1000px;
-  height: 600px;
+  height: 700px;
   background-color: white;
 }
 
@@ -75,12 +75,38 @@ a {
     max-width: fit-content;
   }
 }
+@media (max-width:1070px) {
+  iframe {
+    width: 800px;
+    height: 700px;
+    background-color: white;
+  }
+}
+
+@media (max-width:865px) {
+  iframe {
+    width: 600px;
+    height: 700px;
+    background-color: white;
+  }
+}
+
+
 @media (max-width:710px) {
   .smallStage {
     font-size: 0.7rem;
     text-align: center;
   }
 }
+
+@media (max-width:665px) {
+  iframe {
+    width: 400px;
+    height: 700px;
+    background-color: white;
+  }
+}
+
 @media (max-width:600px) {
   .title {
     padding-top: 10%;
