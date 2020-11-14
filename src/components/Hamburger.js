@@ -4,6 +4,7 @@ import {
   List,
 } from "@material-ui/core";
 import Divider from '@material-ui/core/Divider';
+import { HashLink } from 'react-router-hash-link';
 import { makeStyles } from "@material-ui/core/styles";
 import { Menu } from "@material-ui/icons";
 import * as React from "react";
@@ -40,9 +41,9 @@ const Hamburger = ({ navLinks }) => {
     >
       <List>
         {navLinks.map(({ title, path }, index) => (
-        <a href={path} key={title} >
-            <h1 style={{fontSize:"2rem", padding:"3%"}}>{title}</h1>
-        </a>
+          <HashLink key={index} to={path}>
+            <h1 style={{ fontSize: "2rem", padding: "3%" }}>{title}</h1>
+          </HashLink>
         ))}
       </List>
       <Divider />
@@ -51,18 +52,18 @@ const Hamburger = ({ navLinks }) => {
 
   return (
     <div>
-        <React.Fragment >
+      <React.Fragment >
         <IconButton
-        edge="start"
-        aria-label="menu"
-        onClick={toggleDrawer(true)}
-      >
-        <Menu fontSize="large" style={{ color: `gold`, backgroundColor:"#4054b5" }} />
-      </IconButton>
-          <Drawer  open={state} onClose={toggleDrawer(false)}>
-            {list()}
-          </Drawer>
-        </React.Fragment>
+          edge="start"
+          aria-label="menu"
+          onClick={toggleDrawer(true)}
+        >
+          <Menu fontSize="large" style={{ color: `gold`, backgroundColor: "#4054b5" }} />
+        </IconButton>
+        <Drawer open={state} onClose={toggleDrawer(false)}>
+          {list()}
+        </Drawer>
+      </React.Fragment>
     </div>
   );
 }

@@ -31,9 +31,9 @@ export default function ButtonAppBar({ handleSound, sound, audioLink, audio }) {
       <AppBar position="fixed">
         <Toolbar control="true" >
           <Hidden smDown >
-          {navLinks.map((link, index) => (
-            <HashLink key={index} to={link.path}>
-              <h1>{link.title}</h1>
+          {navLinks.map(({title, path}, index) => (
+            <HashLink key={index} to={path}>
+              <h1>{title}</h1>
             </HashLink>
           ))}
           </Hidden>
