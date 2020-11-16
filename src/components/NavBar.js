@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
 const navLinks = [
   { title: `Jorge's Adventure`, path: `/` },
   { title: `About`, path: `/about` },
-  { title: `Projects`, path: `/projects#stagesTitle` },
+  { title: `Projects`, path: `/projects#top` },
   { title: `Contact`, path: `/projects#contact` }
 ];
 
