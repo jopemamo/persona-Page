@@ -1,8 +1,4 @@
 # Persona-Page
-
-# Status
-Working on making it responsive to the different screen sizes and resolutions, specially phones.
-
 # Instructions
   If you want to run it in your machine: 
   
