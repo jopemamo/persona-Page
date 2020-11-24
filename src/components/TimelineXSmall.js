@@ -87,7 +87,7 @@ const TimelineXSmall = () => {
             <a href="https://github.com/jopemoma" target="_blank" rel="noreferrer" >
               <i className="nes-icon github is-medium"></i>
             </a>
-            <a href="mailto:jorge.moreno@appliedtechnology.se" target="_blank" rel="noreferrer" >
+            <a href="mailto:jpmmpj@gmail.com" target="_blank" rel="noreferrer" >
               <i className="nes-icon gmail is-medium"></i>
             </a>
             <a href="https://www.linkedin.com/in/jorge-moreno-mateo/" target="_blank" rel="noreferrer" >
