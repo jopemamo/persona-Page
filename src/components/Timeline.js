@@ -2,12 +2,8 @@ import React from 'react'
 import { Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineDot, TimelineOppositeContent } from '@material-ui/lab';
 import Paper from '@material-ui/core/Paper';
 import { makeStyles } from '@material-ui/core/styles';
-import Modal from '../components/Modal';
-import LoanCalculator from './LoanCalculator';
-import WMW from './WMW';
-import BidraSammen from './BidraSammen';
-import JSToDo from '../components/JSToDo';
-import ReactToDo from '../components/ReactToDo';
+import Modal from './Modal';
+import { projects } from '../utils/projects';
 import cv from '../files/CV_Jorge_Moreno.pdf';
 
 const useStyles = makeStyles((theme) => ({
@@ -26,49 +22,7 @@ const TimelineComponent = () => {
 
   const classes = useStyles();
 
-  const projects = [
-    {
-      name: "Persona",
-      description: "The page where you are at right now! Done with React.",
-      gitHub: "https://github.com/jopemoma/persona-Page",
-      modal: false,
-    },
-    {
-      name: "LoanCalculator",
-      description: "A Loan Calculator done with React.",
-      gitHub: "https://github.com/jopemoma/loan-calculator",
-      modal: true,
-      component: LoanCalculator,
-    },
-    {
-      name: "BidraSammen",
-      description: "Our Graduation Project at Salt. An App done with React Native.",
-      gitHub: "https://github.com/jopemoma/Graduation-Project",
-      modal: true,
-      component: BidraSammen,
-    },
-    {
-      name: "Which Movie is Worse?",
-      description: "A game where you need to guess which movie has the worse rating! Done with React",
-      gitHub: "https://github.com/jopemoma/Which-movie-is-worse-Game",
-      modal: true,
-      component: WMW,
-    },
-    {
-      name: "React ToDo App",
-      description: "A ToDo App done with React",
-      gitHub: "https://github.com/jopemoma/React-ToDo-app",
-      modal: true,
-      component: ReactToDo,
-    },
-    {
-      name: "JavaScript ToDo App",
-      description: "A ToDo App done with Vanilla JavaScript",
-      gitHub: "https://github.com/jopemoma/Vanilla-JavaScript-ToDo-App",
-      modal: true,
-      component: JSToDo,
-    },
-  ]
+
 
   return (
     <div className="timeline" >
@@ -76,7 +30,7 @@ const TimelineComponent = () => {
         {projects.map((project, index) => (
           <TimelineItem key={index}>
             <TimelineOppositeContent>
-            <p>STAGE {6 - index}</p>
+            <p>STAGE {(projects.length - index)}</p>
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineDot />
@@ -105,7 +59,7 @@ const TimelineComponent = () => {
           <TimelineContent>
             <Paper elevation={3} className={classes.paper}>
               <p className="project__title">Contact Information </p>
-              <img className="theHero" src="https://res.cloudinary.com/diggrhtle/image/upload/v1604332718/persona%20page/Jorge_Moreno_2_z9iur1.jpg" alt="The Hero" />
+              <img className="theHero" src="https://res.cloudinary.com/diggrhtle/image/upload/v1680684641/DSCF3225_mwts6n.jpg" alt="The Hero" />
               <section className="section__contact" >
               <a href="https://github.com/jopemoma" target="_blank" rel="noreferrer" >
                 <i className="nes-icon github is-large"></i>
@@ -113,7 +67,7 @@ const TimelineComponent = () => {
               <a href="mailto:jpmmpj@gmail.com" target="_blank" rel="noreferrer" >
                 <i className="nes-icon gmail is-large"></i>
               </a>
-              <a href="https://www.linkedin.com/in/jorge-moreno-mateo/" target="_blank" rel="noreferrer" >
+              <a href="https://www.linkedin.com/in/jorge-mateo-moreno/" target="_blank" rel="noreferrer" >
                 <i className="nes-icon linkedin is-large"></i>
               </a>
               <a className="anchor__CV" href={cv} target="_blank" rel="noreferrer" >

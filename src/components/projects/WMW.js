@@ -4,7 +4,7 @@ const WMW = () => {
   return (
     <section className="project">
       <p>This is Which Movie is Worse game!</p>
-      <iframe title="WMW" src="https://which-movie-is-worse.herokuapp.com/" />
+      <iframe title="WMW" src="https://which-movie-is-worse.onrender.com/" />
     </ section>
   )
 }

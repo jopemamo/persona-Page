@@ -2,6 +2,7 @@ import React from 'react'
 import { Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineDot, TimelineOppositeContent } from '@material-ui/lab';
 import Paper from '@material-ui/core/Paper';
 import { makeStyles } from '@material-ui/core/styles';
+import { projects } from '../utils/projects';
 import cv from '../files/CV_Jorge_Moreno.pdf';
 
 const useStyles = makeStyles((theme) => ({
@@ -19,57 +20,13 @@ const TimelineSmall = () => {
 
   const classes = useStyles();
 
-  const projects = [
-    {
-      name: "Persona",
-      description: "The page where you are at right now! Done with React.",
-      gitHub: "https://github.com/jopemoma/persona-Page",
-      modal: false,
-    },
-    {
-      name: "LoanCalculator",
-      description: "A Loan Calculator done with React.",
-      gitHub: "https://github.com/jopemoma/loan-calculator",
-      modal: true,
-      link: "https://agitated-shaw-abd9ca.netlify.app/",
-    },
-    {
-      name: "BidraSammen",
-      description: "Our Graduation Project at Salt. An App done with React Native.",
-      gitHub: "https://github.com/jopemoma/Graduation-Project",
-      modal: true,
-      link: "https://res.cloudinary.com/diggrhtle/video/upload/v1604416370/persona%20page/Cloud0x9_Product_Demo_rjclga.mp4",
-    },
-    {
-      name: "Which Movie is Worse?",
-      description: "A game where you need to guess which movie has the worse rating! Done with React",
-      gitHub: "https://github.com/jopemoma/Which-movie-is-worse-Game",
-      modal: true,
-      link: "https://which-movie-is-worse.herokuapp.com/",
-    },
-    {
-      name: "React ToDo App",
-      description: "A ToDo App done with React",
-      gitHub: "https://github.com/jopemoma/React-ToDo-app",
-      modal: true,
-      link: "https://ecstatic-shirley-082a22.netlify.app",
-    },
-    {
-      name: "JavaScript ToDo App",
-      description: "A ToDo App done with Vanilla JavaScript",
-      gitHub: "https://github.com/jopemoma/Vanilla-JavaScript-ToDo-App",
-      modal: true,
-      link: "https://determined-varahamihira-fd0862.netlify.app/",
-    },
-  ]
-
   return (
     <div className="timeline" >
       <Timeline align="left" style={{ maxWidth: "90%" }}>
         {projects.map((project, index) => (
           <TimelineItem key={index}>
             <TimelineOppositeContent>
-              <p className="smallStage" >STAGE {6 - index}</p>
+              <p className="smallStage" >STAGE {projects.length - index}</p>
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineDot />
@@ -98,7 +55,7 @@ const TimelineSmall = () => {
           <TimelineContent>
             <Paper elevation={3} className={classes.paper}>
               <p className="project__title">Contact Information </p>
-              <img className="theHero" src="https://res.cloudinary.com/diggrhtle/image/upload/v1604332718/persona%20page/Jorge_Moreno_2_z9iur1.jpg" alt="The Hero" />
+              <img className="theHero" src="https://res.cloudinary.com/diggrhtle/image/upload/v1680684641/DSCF3225_mwts6n.jpg"  alt="The Hero" />
               <section className="section__contact" >
                 <a href="https://github.com/jopemoma" target="_blank" rel="noreferrer" >
                   <i className="nes-icon github is-medium"></i>
@@ -106,7 +63,7 @@ const TimelineSmall = () => {
                 <a href="mailto:jpmmpj@gmail.com" target="_blank" rel="noreferrer" >
                   <i className="nes-icon gmail is-medium"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/jorge-moreno-mateo/" target="_blank" rel="noreferrer" >
+                <a href="https://www.linkedin.com/in/jorge-mateo-moreno/" target="_blank" rel="noreferrer" >
                   <i className="nes-icon linkedin is-medium"></i>
                 </a>
                 <a className="anchor__CV" href={cv} target="_blank" rel="noreferrer" >
