@@ -4,7 +4,7 @@
 
 If you want to run it in your machine:
 
-      git clone git@github.com:jopemoma/persona-Page.git
+      git clone git@github.com:jopemamo/persona-Page.git
 
       cd persona-Page
 

@@ -4,7 +4,7 @@ import Paper from '@material-ui/core/Paper';
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from './Modal';
 import { projects } from '../utils/projects';
-import cv from '../files/CV_Jorge_Moreno.pdf';
+import cv from '../files/Jorge_Mateo.pdf';
 
 const useStyles = makeStyles((theme) => ({
 
@@ -61,7 +61,7 @@ const TimelineComponent = () => {
               <p className="project__title">Contact Information </p>
               <img className="theHero" src="https://res.cloudinary.com/diggrhtle/image/upload/v1680684641/DSCF3225_mwts6n.jpg" alt="The Hero" />
               <section className="section__contact" >
-              <a href="https://github.com/jopemoma" target="_blank" rel="noreferrer" >
+              <a href="https://github.com/jopemamo" target="_blank" rel="noreferrer" >
                 <i className="nes-icon github is-large"></i>
               </a>
               <a href="mailto:jpmmpj@gmail.com" target="_blank" rel="noreferrer" >
