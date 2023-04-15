@@ -1,6 +1,14 @@
-import { BidraSammen, Connect4, LoanCalculator, WMW, ReactToDo, JSToDo } from "../components/projects"
+import { BidraSammen, InventoryManager, Connect4, LoanCalculator, WMW, ReactToDo, JSToDo } from "../components/projects"
 
 export const projects = [
+  {
+    name: "Inventory Manager",
+    description: "An inventory manager done with React and Node.js with Express.",
+    gitHub: "https://github.com/jopemamo/inventory-manager",
+    modal: true,
+    component: InventoryManager,
+    link: "https://inventory-manager-ttse.onrender.com/",
+  },
   {
     name: "Connect4",
     description: "A connect four game done with React.",
