@@ -36,6 +36,7 @@
 iframe {
   width: 1000px;
   height: 750px;
+  max-height: 85vh;
   background:url(../images/Triangles.gif) rgb(241, 242, 243) center center no-repeat;
 }
 
