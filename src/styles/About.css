@@ -3,6 +3,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: calc(100vh - 64px);
+
 }
 
 .container {
@@ -22,6 +25,7 @@
 
 .text {
   margin: 30px;
+  min-height: 100px;
   padding: 2%;
   width: 100%;
   text-align: center;
@@ -97,87 +101,41 @@
   }
 }
 
-.js {
+.logos {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  animation-delay:1s;
   -webkit-animation-name: bounceInRight;
   animation-name: bounceInRight;
+}
+.js {
+  animation-delay:1s;
 }
 .html {
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
   animation-delay:2s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: bounceInRight;
-  animation-name: bounceInRight;
 }
 .css {
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
   animation-delay:3s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: bounceInRight;
-  animation-name: bounceInRight;
 }
 .react {
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
   animation-delay:4s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: bounceInRight;
-  animation-name: bounceInRight;
 }
 .node {
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
   animation-delay:5s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: bounceInRight;
-  animation-name: bounceInRight;
 }
 .git {
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
   animation-delay:6s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: bounceInRight;
-  animation-name: bounceInRight;
 }
 .mongo {
 
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
   animation-delay:7s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: bounceInRight;
-  animation-name: bounceInRight;
 }
 .sql {
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
   animation-delay:8s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: bounceInRight;
-  animation-name: bounceInRight;
 }
 .docker {
-  -webkit-animation-duration: 2;
-  animation-duration: 2s;
   animation-delay:9s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: bounceInRight;
-  animation-name: bounceInRight;
 }
 
 
@@ -246,7 +204,7 @@
    }
     .text {
       margin-top: 3px;
-      padding: 1%;
+      padding: 3%;
     }
 }
 
@@ -297,7 +255,6 @@
   .text {
     font-size: 0.7rem;
     margin-top: 0px;
-    padding: 0.3%;
   }
   #aboutOptions {
     font-size: 0.7rem;
@@ -310,7 +267,6 @@
   .text {
     font-size: 0.5rem;
     margin-top: 0px;
-    padding: 0;
   }
   #aboutOptions {
     font-size: 0.5rem;

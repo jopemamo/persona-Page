@@ -26,7 +26,7 @@ h1 {
 }
 
 .options {
-  margin-top: 10%;
+  margin: auto;
   animation: blinker 2s linear infinite;
   font-size: 1rem;
   text-align: center;

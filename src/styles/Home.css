@@ -3,10 +3,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 93vh;
 }
 
 .enter {
   max-height: 400px;
+  margin-top: 10%;
 }
 
 @-webkit-keyframes bounceInDown {
@@ -45,7 +48,6 @@
 
 #homeTitle {
   font-size: 10rem;
-  padding-top:10%;
   margin-bottom:7%;
   -webkit-animation-duration: 7s;
   animation-duration: 7s;
@@ -60,14 +62,10 @@
 @media (max-width: 1080px) {
   #homeTitle {
      font-size: 8rem;
-     padding-top: 15%;
-     padding-bottom: 10%;
   }
 }
 @media (max-width: 525px) {
   #homeTitle {
      font-size: 5rem;
-     padding-top: 25%;
-     padding-bottom: 20%;
   }
 }
